@@ -40,7 +40,7 @@ p {
     font-size: 3em;
 }
 
-.desc {
+.theDesigns, .desc {
     width: 60%;
     margin: auto;
     border: 2px solid white;
