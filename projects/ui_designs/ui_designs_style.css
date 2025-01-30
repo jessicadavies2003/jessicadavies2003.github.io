@@ -1,0 +1,65 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background: rgb(16,24,32);
+    background: linear-gradient(180deg, rgba(16,24,32,1) 0%, rgba(4,88,136,1) 50%, rgba(0,161,251,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.nav_list {
+    overflow: hidden;
+    padding-left: 3%;
+}
+  
+.nav_list a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav_list element {
+    padding: 50px;
+    padding-left: 50px;
+    display: inline;
+}
+
+.h1 {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+p {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.desc {
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: rgb(254,231,21);
+    text-align: center;
+    margin: auto;
+    box-sizing: content-box;
+    width: 70%;
+    height: auto;
+}
+
+.desc p {
+    font-size: 1.1em;
+}
+
+.designs {
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: rgb(254,231,21);
+    text-align: center;
+    margin: auto;
+    box-sizing: content-box;
+    width: 70%;
+    height: auto;
+}
