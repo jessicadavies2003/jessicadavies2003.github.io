@@ -30,26 +30,23 @@
             }
 		</script>
 
-		<h1 class="h1">Creative Writings</h1>
+		<h1 class="h1" id="bookTitle"></h1>
 		<hr style="color: white;">
-		<div id="note">
-			<p>When you click on a story with the status "<b>COMPLETE</b>", it will take you to the Wattpad link for that particular story.</p>
-			<p>When you click on a story with the status "<b>WORK IN PROGRESS</b>", it will take you to a separate webpage that features promotional material, sneak peaks and updates on the story.</p>
-		</div>
 
 		<div id="wrapper">
-            <div class="writing-project" id="colin-oslyn">
-                <img class="coverImg" src="promo-material/Cover-Art-Colin-Oslyn.jpg" width="200">
-                <h2>Colin Oslyn: A Cold Case</h2>
-				<p>Status: WORK IN PROGRESS</p>
+            <div class="overview">
+                <img id="coverImg" width="300">
+                <h2>Summary:</h2>
+                <h3 id="summary"></h3>
+                <p id="genre"></p>
+                <hr style="color: white;">
             </div>
+
+            <br>
+
+            <div id="updates"></div>
         </div>
 
-		<script>
-			let colinOslyn = document.getElementById('colin-oslyn')
-			colinOslyn.addEventListener("click", () => {
-				window.location.href = `story-promo.html?id=${colinOslyn.id}`;
-			});
-		</script>
+        <script src="script.js"></script>
 	</body>
 </html>
