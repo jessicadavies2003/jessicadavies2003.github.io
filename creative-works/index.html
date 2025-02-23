@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="creativeWorks.css">
+		<title>Creative Works - Jessica Davies</title>
+	</head>
+
+	<body>
+		<p class="v">Version 3.0</p>
+
+		<div class="nav_list">
+			<a id="homepage" class="element" onmouseover="mouseHover('homepage')" onmouseleave="mouseLeave('homepage')" href="../">Home</a>
+			<a id="myworks" class="element" onmouseover="mouseHover('myworks')" onmouseleave="mouseLeave('myworks')" href="../projects/">Projects</a>
+			<a id="mydesigns" class="element" onmouseover="mouseHover('mydesigns')" onmouseleave="mouseLeave('mydesigns')" href="../web-designs/">Website Designs</a>
+			<a id="myartwork" class="element" onmouseover="mouseHover('myartwork')" onmouseleave="mouseLeave('myartwork')" href="">Creative Works</a>
+		</div>
+
+		<script>
+			function mouseHover(elementId) {
+                let e = document.getElementById(elementId);
+                let len = elementId.length;
+
+                e.style.borderBottom = 'solid rgb(1, 140, 221)';
+                e.style.paddingBottom = '5px';
+            }
+            function mouseLeave(elementId) {
+                let e = document.getElementById(elementId);
+                e.style.borderBottom = '0px solid black';
+                e.style.paddingBottom = '0px';
+            }
+		</script>
+
+		<h1 class="h1">Creative Works</h1>
+		<hr style="color: white;">
+
+		<div id="wrapper">
+            <h3>This section will be used to promote and share my creative works, such as artwork and stories I work on. I will also add sketches and sneak peaks, to promote my work.</h3>
+            <p>NOTE: There will be NO use of AI in any of my works, as I'm completely against it.</p>
+		</div>
+
+        <div id="creative-wrapper">
+            <div class="creative" id="artworkBox">
+                <img class="coverImg" src="../pictures/placeholder.png">
+                <h2>Artwork</h2>
+            </div>
+            <div class="creative" id="writingBox">
+                <img class="coverImg" src="../pictures/placeholder.png">
+                <h2>Creative Writing</h2>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('artworkBox').addEventListener("click", () => {
+                window.location.href = "\artwork\\";
+            });
+            document.getElementById('writingBox').addEventListener("click", () => {
+                window.location.href = "\creative-writing\\";
+            });
+        </script>
+	</body>
+</html>

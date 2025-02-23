@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="web_designs.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Web Designs - Jessica Davies</title>
+	</head>
+
+	<body class="body">
+        <div class="nav_list">
+			<a id="homepage" class="element" onmouseover="mouseHover('homepage')" onmouseleave="mouseLeave('homepage')" href="../index.html">Home</a>
+			<a id="myworks" class="element" onmouseover="mouseHover('myworks')" onmouseleave="mouseLeave('myworks')" href="../projects/">My Works</a>
+			<a id="mydesigns" class="element" onmouseover="mouseHover('mydesigns')" onmouseleave="mouseLeave('mydesigns')" href="../web_designs">My Designs</a>
+			<a id="myartwork" class="element" onmouseover="mouseHover('myartwork')" onmouseleave="mouseLeave('myartwork')" href="../artwork/">My Artwork</a>
+		</div>
+
+		<script>
+			function mouseHover(elementId) {
+                let e = document.getElementById(elementId);
+                let len = elementId.length;
+
+                e.style.borderBottom = 'solid rgb(1, 140, 221)';
+                e.style.paddingBottom = '5px';
+            }
+            function mouseLeave(elementId) {
+                let e = document.getElementById(elementId);
+                e.style.borderBottom = '0px solid black';
+                e.style.paddingBottom = '0px';
+            }
+		</script>
+
+		<h1 class="h1">Website Designs</h1>
+		<hr style="color: white;">
+
+        <div class="desc">
+            <h3>A compilation of website designs I've created as a front-end web designer.</h3>
+		</div>
+
+		<br>
+
+		<div class="theDesigns">
+			<img src="../pictures/Web-Designs/web_design_1.png" width="700" height="400">
+			<p><b>The Homepage of JJDBlogs, my (old) blog website.</b></p>
+			<p>Languages Used: <b>HTML, CSS, JavaScript</b></p>
+			<p>Screenshot Taken 17th September 2024</p>
+			<br>
+
+			<img src="../pictures/Web-Designs/web_design_2.png" width="700" height="400">
+			<p><b>A concept landing page for a fictional company called SereneSounds.</b></p>
+			<p>Languages Used: <b>HTML, CSS, JavaScript</b></p>
+			<p>Screenshot Taken 21th September 2024</p>
+			<br>
+
+			<video width="700" height="400" controls>
+				<source src="../pictures/Web-Designs/web_design_3.mp4">
+			</video>
+			<p><b>A concept homepage for a friend's organisation called Aural Productions.</b></p>
+			<p>Languages Used: <b>HTML, CSS, JavaScript</b></p>
+			<p>Screen Recording Taken 22th September 2024</p>
+			<br>
+
+			<img src="../pictures/Web-Designs/web_design_4.png" width="700" height="500">
+			<p><b>A concept landing page for a fictional company called TerraForge.</b></p>
+			<p>Languages Used: <b>HTML, CSS, JavaScript</b></p>
+			<p>Screenshot Taken 23th September 2024</p>
+			<br>
+
+			<img src="../pictures/Web-Designs/web_design_5.png" width="700" height="600">
+			<p><b>A concept landing page for a fictional company called BlueFin Robotics.</b></p>
+			<p>Languages Used: <b>HTML, CSS, JavaScript</b></p>
+			<p>Screenshot Taken 29th September 2024</p>
+			<br>
+
+			<img src="../pictures/Web-Designs/web_design_6.png" width="700" height="400">
+			<p><b>A concept landing page for a fictional company called PixelForge Games.</b></p>
+			<p>Languages Used: <b>HTML, CSS</b></p>
+			<p>Screenshot Taken 30th September 2024</p>
+			<br>
+
+			<video width="700" height="400" controls>
+				<source src="../pictures/Web-Designs/web_design_7.mp4">
+			</video>
+			<p><b>A concept landing page for a fictional company called Leaf & Loom.</b></p>
+			<p>Languages Used: <b>HTML, CSS</b></p>
+			<p>Screen Recording Taken 2nd October 2024</p>
+			<br>
+
+			<img src="../pictures/Web-Designs/web_design_8.png" width="700" height="400">
+			<p><b>A concept landing page for a fictional company called FreshBite Meals.</b></p>
+			<p>Languages Used: <b>HTML, CSS</b></p>
+			<p>Screenshot Taken 7th October 2024</p>
+			<br>
+
+			<img src="../pictures/Web-Designs/web_design_9.png" width="700" height="400">
+			<p><b>A concept landing page for a fictional company called HydraPure.</b></p>
+			<p>Languages Used: <b>HTML, CSS</b></p>
+			<p>Screenshot Taken 7th October 2024</p>
+			<br>
+		</div>
+	</body>
+</html>

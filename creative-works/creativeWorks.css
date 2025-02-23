@@ -2,7 +2,7 @@ body {
     font-family: Baskervville, serif;
     /* background: rgb(16,24,32);
     background: linear-gradient(180deg, rgba(16,24,32,1) 0%, rgb(1, 72, 113) 50%, rgb(2, 140, 221) 100%); */
-    background-image: url("pictures/background_img.png");
+    background-image: url("../pictures/background_img.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -42,61 +42,44 @@ p {
 
 .h1 {
     text-align: center;
-    color: white;
     font-size: 3em;
+}
+
+.h1, #wrapper, #creative-wrapper {
     letter-spacing: 0.7px;
+    color: white;
 }
 
-.rightItems {
-    margin-left: 40%;
-    width: 40%;
-}
-
-.leftItems {
-    margin-left: 15%;
-    width: 40%;
-}
-
-.wrapper {
-    display: flex;
-    width: 80%;
-    margin: auto;
-}
-
-button {
-    height: 50px;
-    width: 5%;
-    margin: auto;
-    color: black;
-}
-
-.info {
-    box-shadow: 0px 0px 20px 5px rgb(255, 255, 20);
-    backdrop-filter: blur(10px);
-    margin: auto;
-    width: 50%;
-    padding: 0px 20px 0px 20px;
-    height: 500px;
-    margin-top: auto;
-    text-align: center;
-    color: azure;
-    vertical-align: middle;
-}
-
-.info a {
-    text-decoration: none;
-    color: azure;
-}
-
-.info a:hover {
-    border-bottom: 1px solid azure;
-}
-
-.currentProject {
+#wrapper {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+#creative-wrapper {
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin: auto;
+    gap: 10%;
+}
+
+.creative {
+    text-align: center;
+    padding: 20px;
+}
+
+.creative:hover {
+    box-shadow: 0px 0px 20px 10px rgb(25, 112, 200);
+    cursor: pointer;
+}
+
+.coverImg {
+    width: 200px;
+    height: 200px;
 }
 
 @media screen and (max-width: 800px) {
@@ -106,10 +89,5 @@ button {
 
     p {
         font-size: 15px;
-    }
-
-    #jessica {
-        width: 90%;
-        height: 45vh;
     }
 }
