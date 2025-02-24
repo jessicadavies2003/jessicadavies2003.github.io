@@ -1,5 +1,5 @@
 body {
-    font-family:'Times New Roman', Times, serif;
+    font-family: Baskervville, serif;
     background: rgb(16,24,32);
     background: linear-gradient(180deg, rgba(16,24,32,1) 0%, rgba(4,88,136,1) 50%, rgba(0,161,251,1) 100%);
     background-size: cover;
@@ -38,10 +38,17 @@ p {
     padding-left: 15px;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    color: azure;
+    margin: auto;
+}
+
 .desc {
     border-radius: 25px;
     overflow: hidden;
-    background-color: rgb(254,231,21);
     text-align: center;
     margin: auto;
     box-sizing: content-box;
@@ -56,7 +63,6 @@ p {
 .designs {
     border-radius: 25px;
     overflow: hidden;
-    background-color: rgb(254,231,21);
     text-align: center;
     margin: auto;
     box-sizing: content-box;
