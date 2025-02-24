@@ -53,19 +53,29 @@ p {
 #wrapper, .overview {
     display: flex;
     flex-direction: column;
-}
-
-#wrapper {
-    width: 50%;
     align-items: center;
     justify-content: center;
     margin: auto;
 }
 
-.coverImg {
+#wrapper {
+    width: 60%;
+}
+
+#updates {
+    width: 100%;
+}
+
+#updates h1, #updates i {
+    text-align: center;
+}
+
+#coverImg {
     object-fit: contain;
+    width: 300px;
     align-items: center;
     justify-content: center;
+    box-shadow: -5px 5px 20px 5px;
 }
 
 @media screen and (max-width: 800px) {
@@ -79,5 +89,9 @@ p {
 
     #note, #wrapper {
         width: 80%;
+    }
+
+    #coverImg {
+        width: 200px;
     }
 }

@@ -2,17 +2,32 @@ const stories = {
     'colin-oslyn': {
         title: "Colin Oslyn: A Cold Case",
         img: "promo-material/Cover-Art-Colin-Oslyn.jpg",
-        summary: `
-        Colin Oslyn, 35, was a famous abstract painter, who unfortunately died due to a stab wound to the chest. He died in his art room after getting into a fight with the killer.<br><br>
-        Detective Brighton (female) is told to take on the case, with her good friend James in the forensics team, and faces multiple red herrings throughout the case.
-        <br><br>However, there's one small piece of evidence that the killer forgot to get rid of, but Brighton kept discarding it, since more and more evidence came through pointing to person A being the culprit.<br><br>
-        Eventually, after facing many dead ends fitting the pieces together, she finally goes back to that small piece of evidence, asks James to run it through some tests, and finally figures out the real culprit.
+        summary: `Colin Oslyn, 35, was a famous abstract painter, who unfortunately died due to a stab wound to the chest. He died in his art room after getting into a fight with the killer.<br><br>
+Detective Brighton (female) is told to take on the case, with her good friend James in the forensics team, and faces multiple red herrings throughout the case.<br><br>
+However, there's one small piece of evidence that the killer forgot to get rid of, but Brighton kept discarding it, since more and more evidence came through pointing to another suspect being the culprit.<br><br>
+Eventually, after facing many dead ends fitting the pieces together, she finally goes back to that small piece of evidence, and finally figures out the real culprit.
         `,
         genre: "Murder Mystery",
         teasers: {
             teaser1: {
                 teaserTitle: "Teaser 1",
-                teaserText: `hello world this is a test`
+                teaserDate: "24th February 2025",
+                teaserText: `"Detective!" Jamie called to Detective Brighton from her office door. Brighton was finishing up her report on a previous case report.<br><br>
+Startled, Brighton shot her head up to look at Jamie, with a confused expression. "Yes?"<br><br>
+"I need to speak with you in my office, now." Jamie spoke in a stern tone of voice, leaning on the door frame with her arms crossed. Brighton let out a huff in annoyance, and stood up from her seat, tucking her chair in neatly.<br><br>
+She made her way towards Jamie's office, as Jamie entered the office and took her seat. Brighton followed shortly after, entering the office with a small smile, and taking a seat right opposite Jamie's office chair. "You called, boss?"<br><br>
+"You got a new case." Jamie spoke in slight monotone, handing Brighton a yellow post it note with something written on it. "Here's the address."<br><br>
+The woman took the paper and looked at it briefly, then looked back up at Jamie with a confused look.<br><br>
+"I thought I had a case report to be completed by tomorrow morning. What do I do about that?"<br><br>
+Jamie let out a sigh, leaning back on her chair slightly and crossing her legs. "How much have you written for it currently?"<br><br>
+"2 pages. It's almost complete, so I could quickly fini-"<br><br>
+"No, just put it on my desk and I'll find someone else who isn't too busy to finish it off. New case means you drop everything and focus on it, regardless."<br><br>
+"But boss-"<br><br>
+"You heard me, Brighton. Get investigating, now."<br><br>
+Brighton let out a sigh. "Alright." She spoke, with a hint of annoyance in her tone of voice. She stood up from the seat, tucking in the chair, nodded at Jamie, before exiting her office and closing the door behind her.<br><br>
+She made her way to her desk to grab her jacket. While doing so, she looked over to James' office to see if he was there. No sign of him, so he must have been called earlier about this new case, or working on a different one. Who knows?<br><br>
+She confidently walked down the spiral staircase, and straight to the front door. Once outside, she took a moment to breathe in the fresh air, before heading to her car.
+                `
             }
         }
     }
@@ -32,16 +47,20 @@ const teasers = stories[id]['teasers'];
 const len = Object.keys(teasers).length;
 for (let i = 0; i < len; i++) {
     const currentID = `teaser${i+1}`;
-    console.log(currentID);
     const current = teasers[currentID];
     let update = document.createElement("div");
 
     let teaserTitle = document.createElement("h2");
     teaserTitle.textContent = current['teaserTitle'];
+    let teaserDate = document.createElement("i");
+    teaserDate.textContent = current['teaserDate'];
     let teaserText = document.createElement("p");
-    teaserText.textContent = current['teaserText'];
+    teaserText.innerHTML = current['teaserText'];
+    teaserText.style.backgroundColor = "rgb(4,88,136)";
+    teaserText.style.padding = "20px";
 
     update.appendChild(teaserTitle);
+    update.appendChild(teaserDate);
     update.appendChild(teaserText);
     document.getElementById('updates').appendChild(update);
 }
