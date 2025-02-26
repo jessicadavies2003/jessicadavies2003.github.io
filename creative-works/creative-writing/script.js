@@ -10,7 +10,13 @@ Eventually, after facing many dead ends fitting the pieces together, she finally
         genre: "Murder Mystery",
         teasers: {
             teaser1: {
-                teaserTitle: "Teaser 1",
+                teaserTitle: "Teaser 1 - Old Cover Art",
+                teaserDate: "18th February 2025",
+                teaserText: `The first piece of cover art for this story, before a friend of mine offered to redesign it.
+                <img src="promo-material/Old-Cover-Art-Colin-Oslyn.jpg" width="300">`
+            },
+            teaser2: {
+                teaserTitle: "Teaser 2 - Chapter 1 Preview",
                 teaserDate: "24th February 2025",
                 teaserText: `"Detective!" Jamie called to Detective Brighton from her office door. Brighton was finishing up her report on a previous case report.<br><br>
 Startled, Brighton shot her head up to look at Jamie, with a confused expression. "Yes?"<br><br>
