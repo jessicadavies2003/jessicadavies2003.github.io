@@ -2,10 +2,10 @@ const stories = {
     'colin-oslyn': {
         title: "Colin Oslyn: A Cold Case",
         img: "promo-material/Cover-Art-Colin-Oslyn.jpg",
-        summary: `Colin Oslyn, 35, was a famous abstract painter, who unfortunately died due to a stab wound to the chest. He died in his art room after getting into a fight with the killer.<br><br>
+        summary: `Colin Oslyn was a famous abstract painter, and had many known and loving fans complimenting and praising his work. Unfortunately, he was found dead in his art room, a stab wound to the chest.<br><br>
 Detective Brighton (female) is told to take on the case, with her good friend James in the forensics team, and faces multiple red herrings throughout the case.<br><br>
 However, there's one small piece of evidence that the killer forgot to get rid of, but Brighton kept discarding it, since more and more evidence came through pointing to another suspect being the culprit.<br><br>
-Eventually, after facing many dead ends fitting the pieces together, she finally goes back to that small piece of evidence, and finally figures out the real culprit.
+Will Brighton finally find out who the culprit of this disturbing case really is? Or will she be stuck in a wormhole with no way out?
         `,
         genre: "Murder Mystery",
         teasers: {
@@ -13,7 +13,7 @@ Eventually, after facing many dead ends fitting the pieces together, she finally
                 teaserTitle: "Teaser 1 - Old Cover Art",
                 teaserDate: "18th February 2025",
                 teaserText: `The first piece of cover art for this story, before a friend of mine offered to redesign it.
-                <img src="promo-material/Old-Cover-Art-Colin-Oslyn.jpg" width="300">`
+                <img id="oldCover" src="promo-material/Old-Cover-Art-Colin-Oslyn.jpg" width="300">`
             },
             teaser2: {
                 teaserTitle: "Teaser 2 - Chapter 1 Preview",

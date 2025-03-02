@@ -8,7 +8,7 @@
 	</head>
 
 	<body>
-		<p class="v">Version 3.0</p>
+		<p class="v">Version 3.1</p>
 
 		<div class="nav_list">
 			<a id="homepage" class="element" onmouseover="mouseHover('homepage')" onmouseleave="mouseLeave('homepage')" href="">Home</a>
@@ -70,24 +70,32 @@
 				<h2>Education</h2>
 				<p>In 2019, I enrolled into Crosskeys college, located in Newport Gwent, for a total of 2 years. Here, I studied three subjects: <b>Computer Science, Maths, and French</b>. I chose Computer Science and Maths, as programming was (and still is) my passion, and I chose French, as many of my lecturers told me that my French pronounciation is very good, and I wanted to learn a language during my study.</p>
 				<p>In 2021, I then enrolled into Cardiff University, as I was presented a conditional offer and met their requirements. I studied Computer Science in this university for a total of 3 years.</p>
+				<p>In May 2025, I will begin my studies at Coventry University, studying Software Development at a masters level. The duration of the course is 2 years, meaning that it will be a part time course. During this time, I wish to gain some work experience by applying for a part time job in Coventry.</p>
 			</div>
 
 			<br>
 
 			<div class="info" id="5">
-				<h2>Recent Updates - Version 3.0</h2>
+				<h2>Recent Updates - Version 3.1</h2>
 				<p>Updated various parts around the website.</p>
-				<p>To see the full log of website updates, click <a href="updatelog/">here</a>.</p>
+				<p>To see the full log of website updates, click <a href="update-log/">here</a>.</p>
 			</div>
 
 			<br>
 
 			<div class="info" id="6">
-				<h2>LIVE! My Current Project(s)</h2>
+				<h2>LIVE! My Current Projects</h2>
 				<div class="currentProject">
 					<img src="pictures/WebHack-logo.png" width="300">
 					<p>Introducing... <b>WebHeck</b>! The site for hackers, new and experienced, to test their hacking skills in a safe and friendly environment. Learn Cyber Security for websites, and get hands-on practice with challenges!</p>
-					<p>No preview is avaliable... <i>yet</i>!</p>
+					<p>Made primarily in PHP, so when this is released, it'll be on an external URL, that will be linked in Projects.</p>
+					<p>No preview or article is avaliable... <i>yet</i>!</p>
+				</div>
+				<hr style="color: white;">
+				<div class="currentProject">
+					<p>Also introducing... <b>CodeQuestRush</b>! A speed coding game designed to test how quickly you can think and code simultaneously. With levels ranging from Easy to Expert, new and experienced programmers are welcome to come and try it out!</p>
+					<p>Made primarily in HTML, but will also be put on an external URL, that will be linked in Projects.</p>
+					<p>No preview or article is avaliable... <i>yet</i>!</p>
 				</div>
 			</div>
 
@@ -100,14 +108,9 @@
 
 			<br>
 
-			<div class="info" id="8">
-				<h2>Website Designs</h2>
-				<p>Check <a href="web-designs/">here</a> to observe my best web design works (of course, this will continuously be updated with new designs).</p>
-			</div>
-
 			<br>
 
-			<div class="info" id="9">
+			<div class="info" id="8">
 				<h2>Contact Me!</h2>
 				<p>Interested in any of my works, or have a webpage design idea that you would like me to create for you? Go ahead and contact me!</p>
 				<p>Email: <a href="mailto:jessydavies@hotmail.com"><b>jessydavies@hotmail.com</b></a></p>
@@ -128,12 +131,11 @@
 			}
 
 			let currentNum = 1;
-			let maxNum = 9;
+			let maxNum = 8;
 			
 			function nextSlide(btn) {
 				document.getElementById(currentNum.toString()).hidden = true;
 
-				console.log(`Current Number: ${currentNum}`);
 				if (btn === 'left') {
 					if (currentNum <= 1) {
 						currentNum = maxNum;

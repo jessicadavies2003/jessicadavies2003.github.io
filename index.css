@@ -69,6 +69,11 @@ button {
     width: 5%;
     margin: auto;
     color: black;
+    font-size: 1.5rem;
+}
+
+button[id="left"] {
+    margin-bottom: 20%;
 }
 
 .info {
@@ -82,6 +87,8 @@ button {
     text-align: center;
     color: azure;
     vertical-align: middle;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .info a {
@@ -109,12 +116,20 @@ button {
         font-size: 15px;
     }
 
-    #jessica {
+    .info {
         width: 90%;
-        height: 45vh; 
+    }
+
+    #jessica {
+        object-fit: contain;
     }
 
     .wrapper {
         flex-direction: column;
+    }
+
+    button {
+        width: 20%;
+        font-size: 1.3rem;
     }
 }
