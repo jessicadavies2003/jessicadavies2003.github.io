@@ -8,8 +8,6 @@
 	</head>
 
 	<body>
-		<p class="v">Version 3.1</p>
-
 		<div class="nav_list">
 			<a id="homepage" class="element" onmouseover="mouseHover('homepage')" onmouseleave="mouseLeave('homepage')" href="">Home</a>
 			<a id="projects" class="element" onmouseover="mouseHover('projects')" onmouseleave="mouseLeave('projects')" href="projects/">Projects</a>
@@ -40,7 +38,9 @@
 				<
 			</button>
 
+
 			<div class="info" id="1">
+				<div id="borderBG"></div>
 				<p>Hello there! I see you've stumbled across my website!</p>
 				<p>Allow me to introduce myself.</p>
 				<img id="jessica" src="pictures/jessica.jpg" width="230" height="300">
@@ -59,9 +59,18 @@
 
 			<div class="info" id="3">
 				<h2>My Skills</h2>
-				<p><b>Advanced</b> - Python, HTML, CSS</p>
-				<p><b>Intermediate</b> - JavaScript</p>
-				<p><b>Beginner</b> - React.JS, PHP</p>
+				<div class="row">
+					<p><b>Beginner</b></p>
+					<p>PHP</p>
+				</div>
+				<div class="row">
+					<p><b>Intermediate</b></p>
+					<p>JavaScript</p>
+				</div>
+				<div class="row">
+					<p><b>Advanced</b></p>
+					<p>Python, HTML, CSS</p>
+				</div>
 			</div>
 
 			<br>
@@ -76,7 +85,7 @@
 			<br>
 
 			<div class="info" id="5">
-				<h2>Recent Updates - Version 3.1</h2>
+				<h2>Recent Updates - Version 3.2</h2>
 				<p>Updated various parts around the website.</p>
 				<p>To see the full log of website updates, click <a href="update-log/">here</a>.</p>
 			</div>
@@ -84,18 +93,17 @@
 			<br>
 
 			<div class="info" id="6">
-				<h2>LIVE! My Current Projects</h2>
+				<h2 style="color: rgb(233, 72, 72);">LIVE! My Current Projects</h2>
+				<hr style="color: white;">
 				<div class="currentProject">
-					<img src="pictures/WebHack-logo.png" width="300">
-					<p>Introducing... <b>WebHeck</b>! The site for hackers, new and experienced, to test their hacking skills in a safe and friendly environment. Learn Cyber Security for websites, and get hands-on practice with challenges!</p>
-					<p>Made primarily in PHP, so when this is released, it'll be on an external URL, that will be linked in Projects.</p>
+					<p>Introducing... <b>CodeQuestRush</b>! A speed coding game designed to test how quickly you can think and code simultaneously. With levels ranging from Easy to Expert, new and experienced programmers are welcome to come and try it out!</p>
+					<p>Made primarily in HTML, but will also be put on an external URL, that will be linked in Projects.</p>
 					<p>No preview or article is avaliable... <i>yet</i>!</p>
 				</div>
 				<hr style="color: white;">
 				<div class="currentProject">
-					<p>Also introducing... <b>CodeQuestRush</b>! A speed coding game designed to test how quickly you can think and code simultaneously. With levels ranging from Easy to Expert, new and experienced programmers are welcome to come and try it out!</p>
-					<p>Made primarily in HTML, but will also be put on an external URL, that will be linked in Projects.</p>
-					<p>No preview or article is avaliable... <i>yet</i>!</p>
+					<p>Also introducing... <b>DOMKit</b>! A HTML elements library designed to simplify the creation of essential HTML elements, while also applying some default styling. Easy to download and import into your website, and ensures that website creation is much faster for you.</p>
+					<p><a href="https://github.com/jessicadavies2003/DOMKit">View the repository!</a></a></p>
 				</div>
 			</div>
 
@@ -123,16 +131,15 @@
 		</div>
 
 		<script>
+			const maxNum = 8;
 			document.body.onload = function(){
-				for (let i = 2; i < 10; i++) {
+				for (let i = 2; i < maxNum+2; i++) {
 					let current = document.getElementById(i.toString());
 					current.hidden = true;
 				}
 			}
 
 			let currentNum = 1;
-			let maxNum = 8;
-			
 			function nextSlide(btn) {
 				document.getElementById(currentNum.toString()).hidden = true;
 

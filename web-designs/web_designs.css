@@ -37,6 +37,7 @@ p {
     text-align: center;
     color: white;
     font-size: 3em;
+    letter-spacing: 0.7px;
 }
 
 .desc {
@@ -56,6 +57,7 @@ p {
 }
 
 .theDesigns img {
+    width: 70%;
     border-radius: 20px;
 }
 
@@ -72,7 +74,7 @@ p {
         width: 100%;
     }
 
-    img {
+    .theDesign img {
         width: 100%;
         height: 100%;
     }

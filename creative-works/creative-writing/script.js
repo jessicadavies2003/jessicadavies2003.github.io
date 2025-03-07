@@ -4,7 +4,7 @@ const stories = {
         img: "promo-material/Cover-Art-Colin-Oslyn.jpg",
         summary: `Colin Oslyn was a famous abstract painter, and had many known and loving fans complimenting and praising his work. Unfortunately, he was found dead in his art room, a stab wound to the chest.<br><br>
 Detective Brighton (female) is told to take on the case, with her good friend James in the forensics team, and faces multiple red herrings throughout the case.<br><br>
-However, there's one small piece of evidence that the killer forgot to get rid of, but Brighton kept discarding it, since more and more evidence came through pointing to another suspect being the culprit.<br><br>
+However, there's one small piece of evidence that the killer forgot to get rid of, but Brighton kept discarding it, since more and more evidence came through pointing other suspects.<br><br>
 Will Brighton finally find out who the culprit of this disturbing case really is? Or will she be stuck in a wormhole with no way out?
         `,
         genre: "Murder Mystery",
@@ -26,7 +26,7 @@ She made her way towards Jamie's office, as Jamie entered the office and took he
 The woman took the paper and looked at it briefly, then looked back up at Jamie with a confused look.<br><br>
 "I thought I had a case report to be completed by tomorrow morning. What do I do about that?"<br><br>
 Jamie let out a sigh, leaning back on her chair slightly and crossing her legs. "How much have you written for it currently?"<br><br>
-"2 pages. It's almost complete, so I could quickly fini-"<br><br>
+"4 pages. It's almost complete, so I could quickly fini-"<br><br>
 "No, just put it on my desk and I'll find someone else who isn't too busy to finish it off. New case means you drop everything and focus on it, regardless."<br><br>
 "But boss-"<br><br>
 "You heard me, Brighton. Get investigating, now."<br><br>
