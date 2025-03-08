@@ -92,4 +92,8 @@ p {
     p {
         font-size: 15px;
     }
+
+    #creative-wrapper {
+        flex-direction: column;
+    }
 }
