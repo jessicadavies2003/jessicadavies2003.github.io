@@ -12,11 +12,11 @@ Will Brighton finally find out who the culprit of this disturbing case really is
             teaser1: {
                 teaserTitle: "Teaser 1 - Old Cover Art",
                 teaserDate: "18th February 2025",
-                teaserText: `The first piece of cover art for this story, before a friend of mine offered to redesign it.
+                teaserText: `The first piece of cover art for this story, before a friend of mine offered to redesign it.<br><br>
                 <img id="oldCover" src="promo-material/Old-Cover-Art-Colin-Oslyn.jpg" width="300">`
             },
             teaser2: {
-                teaserTitle: "Teaser 2 - Chapter 1 Preview",
+                teaserTitle: "Teaser 2 - Chapter 1 Draft Preview",
                 teaserDate: "24th February 2025",
                 teaserText: `"Detective!" Jamie called to Detective Brighton from her office door. Brighton was finishing up her report on a previous case report.<br><br>
 Startled, Brighton shot her head up to look at Jamie, with a confused expression. "Yes?"<br><br>
@@ -34,6 +34,15 @@ Brighton let out a sigh. "Alright." She spoke, with a hint of annoyance in her t
 She made her way to her desk to grab her jacket. While doing so, she looked over to James' office to see if he was there. No sign of him, so he must have been called earlier about this new case, or working on a different one. Who knows?<br><br>
 She confidently walked down the spiral staircase, and straight to the front door. Once outside, she took a moment to breathe in the fresh air, before heading to her car.
                 `
+            },
+            teaser3: {
+                teaserTitle: "Update 1",
+                teaserDate: "10th March 2025",
+                teaserText: `Chapter 1 is now fully completed, after the teaser was reworked and finalised!<br><br>
+Prologue draft is now complete, a bit of tweaking and it should be complete.<br><br>
+Chapter 2 onwards still needs their drafts completed, but overall, looking good so far!<br><br>
+It has been confirmed that there will be an audiobook released after the story is completed and uploaded to Wattpad. VAs may be needed.<br><br>
+12 pages, 5000+ words`
             }
         }
     }

@@ -49,20 +49,22 @@ p {
 }
 
 .theDesigns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     margin: auto;
-    width: 50%;
+}
+
+.design {
     text-align: center;
     color: white;
+}
+
+.design img, .design video {
+    border-radius: 20px;
     padding: 20px 20px 20px 20px;
-}
-
-.theDesigns img {
-    width: 70%;
-    border-radius: 20px;
-}
-
-.theDesigns video {
-    border-radius: 20px;
 }
 
 @media screen and (max-width: 1100px) {
