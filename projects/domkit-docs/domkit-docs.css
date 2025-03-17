@@ -1,0 +1,97 @@
+body {
+    font-family: Baskervville, serif;
+    background: rgb(16,24,32);
+    background: linear-gradient(180deg, rgba(16,24,32,1) 0%, rgba(4,88,136,1) 50%, rgba(0,161,251,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.nav_list {
+    overflow: hidden;
+    padding-left: 3%;
+}
+  
+.nav_list a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav_list element {
+    padding: 50px;
+    padding-left: 50px;
+    display: inline;
+}
+
+.h1 {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    color: azure;
+    margin: auto;
+}
+
+.desc {
+    border-radius: 25px;
+    overflow: hidden;
+    margin: auto;
+    box-sizing: content-box;
+    width: 70%;
+    height: auto;
+}
+
+.desc h2, .desc p {
+    text-align: left;
+}
+
+.desc h2 {
+    font-size: 1.6rem;
+}
+
+.desc p {
+    font-size: 1.2em;
+}
+
+.func-wrapper {
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(4,88,136);
+}
+
+.func-wrapper code {
+    font-size: 1.1rem;
+}
+
+.funcDesc p, .param {
+    padding-left: 5%;
+}
+
+#code {
+    text-align: left;
+    background-color: rgb(4, 18, 38);
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+#require {
+    color: rgba(222, 0, 0, 0.633);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100vw;
+    }
+}

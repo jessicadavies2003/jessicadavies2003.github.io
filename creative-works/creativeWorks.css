@@ -2,7 +2,7 @@ body {
     font-family: Baskervville, serif;
     /* background: rgb(16,24,32);
     background: linear-gradient(180deg, rgba(16,24,32,1) 0%, rgb(1, 72, 113) 50%, rgb(2, 140, 221) 100%); */
-    background-image: url("../pictures/background_img.png");
+    background-image: url("../media/background_img.png");
     background-size: cover;
     background-repeat: no-repeat;
 }

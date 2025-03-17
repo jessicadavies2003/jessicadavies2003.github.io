@@ -2,7 +2,7 @@ body {
     font-family: Baskervville, serif;
     /* background: rgb(16,24,32);
     background: linear-gradient(180deg, rgba(16,24,32,1) 0%, rgb(1, 72, 113) 50%, rgb(2, 140, 221) 100%); */
-    background-image: url("pictures/background_img.png");
+    background-image: url("media/background_img.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -45,6 +45,10 @@ p {
     color: white;
     font-size: 3em;
     letter-spacing: 0.7px;
+}
+
+p {
+    font-size: 1.5rem;
 }
 
 .rightItems {
@@ -93,9 +97,9 @@ button[id="left"] {
     box-shadow: 0px 0px 20px 5px rgb(255, 255, 20);
     backdrop-filter: blur(10px);
     margin: auto;
-    width: 60%;
+    width: 70%;
     padding: 0px 15px 0px 15px;
-    height: 500px;
+    height: 600px;
     text-align: center;
     color: azure;
     vertical-align: middle;

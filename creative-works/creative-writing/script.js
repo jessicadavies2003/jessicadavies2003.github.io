@@ -2,21 +2,15 @@ const stories = {
     'colin-oslyn': {
         title: "Colin Oslyn: A Cold Case",
         img: "promo-material/Cover-Art-Colin-Oslyn.jpg",
-        summary: `Colin Oslyn was a famous abstract painter, and had many known and loving fans complimenting and praising his work. Unfortunately, he was found dead in his art room, a stab wound to the chest.<br><br>
+        summary: `From the mind of Jessica Davies, comes the cruel and disturbing case of a famous painter, Colin Oslyn, who was found dead by this mysterious woman, Stephanie. Join Detective Brighton and her good friend James Smith in figuring out this confusing mystery.<br><br>
+Colin Oslyn was a famous abstract painter, and had many known and loving fans complimenting and praising his work. Unfortunately, he was found dead in his art room, a stab wound to the chest.<br><br>
 Detective Brighton (female) is told to take on the case, with her good friend James in the forensics team, and faces multiple red herrings throughout the case.<br><br>
-However, there's one small piece of evidence that the killer forgot to get rid of, but Brighton kept discarding it, since more and more evidence came through pointing other suspects.<br><br>
 Will Brighton finally find out who the culprit of this disturbing case really is? Or will she be stuck in a wormhole with no way out?
         `,
         genre: "Murder Mystery",
         teasers: {
             teaser1: {
-                teaserTitle: "Teaser 1 - Old Cover Art",
-                teaserDate: "18th February 2025",
-                teaserText: `The first piece of cover art for this story, before a friend of mine offered to redesign it.<br><br>
-                <img id="oldCover" src="promo-material/Old-Cover-Art-Colin-Oslyn.jpg" width="300">`
-            },
-            teaser2: {
-                teaserTitle: "Teaser 2 - Chapter 1 Draft Preview",
+                teaserTitle: "Teaser 1 - Chapter 1 Draft Preview",
                 teaserDate: "24th February 2025",
                 teaserText: `"Detective!" Jamie called to Detective Brighton from her office door. Brighton was finishing up her report on a previous case report.<br><br>
 Startled, Brighton shot her head up to look at Jamie, with a confused expression. "Yes?"<br><br>
@@ -35,15 +29,25 @@ She made her way to her desk to grab her jacket. While doing so, she looked over
 She confidently walked down the spiral staircase, and straight to the front door. Once outside, she took a moment to breathe in the fresh air, before heading to her car.
                 `
             },
-            teaser3: {
+            teaser2: {
                 teaserTitle: "Update 1",
                 teaserDate: "10th March 2025",
                 teaserText: `Chapter 1 is now fully completed, after the teaser was reworked and finalised!<br><br>
 Prologue draft is now complete, a bit of tweaking and it should be complete.<br><br>
-Chapter 2 onwards still needs their drafts completed, but overall, looking good so far!<br><br>
-It has been confirmed that there will be an audiobook released after the story is completed and uploaded to Wattpad. VAs may be needed.<br><br>
+Chapter 2 onwards still needs their drafts completed, but overall, looking good so far! Very excited when the story is complete!<br><br>
+It has been confirmed that there will be an audiobook released after the story is completed and uploaded to Wattpad. VAs may be needed, this will be decided after the completion of the story.<br><br>
 12 pages, 5000+ words`
-            }
+            },
+            teaser3: {
+                teaserTitle: "Teaser 2 - Project Reveal Video",
+                teaserDate: "13th March 2025",
+                teaserText: `The first video that reveals the project by providing a small teaser from the prologue.<br><br>
+<video id="projectReveal" controls>
+    <source src="promo-material/colin-oslyn-project-reveal.mp4">
+</video><br><br>
+View the YT channel for updates & trailers <a href="https://www.youtube.com/@JessicaDavies-2003">here</a>.<br><br>
+Updates will continue here as well, until the full story is avaliable on Wattpad.`
+            },
         }
     }
 }

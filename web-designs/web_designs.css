@@ -1,6 +1,6 @@
 body {
     font-family: Baskervville, serif;
-    background-image: url("../pictures/background_img.png");
+    background-image: url("../media/background_img.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -63,6 +63,9 @@ p {
 }
 
 .design img, .design video {
+    width: 600px;
+    height: 350px;
+    object-fit: scale-down;
     border-radius: 20px;
     padding: 20px 20px 20px 20px;
 }
