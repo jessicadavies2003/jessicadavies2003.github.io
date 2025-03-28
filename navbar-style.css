@@ -1,0 +1,18 @@
+.nav_list {
+    overflow: hidden;
+    padding-left: 3%;
+}
+  
+.nav_list a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav_list a:hover {
+    border-bottom: 1px solid rgb(1, 140, 221);
+    cursor: pointer;
+}

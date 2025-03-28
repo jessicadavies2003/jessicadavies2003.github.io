@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet"/>
+		<link rel="stylesheet" href="../../navbar-style.css">
 		<link rel="stylesheet" href="domkit-docs.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>DOMKit Documentation - Jessica Davies</title>
@@ -9,27 +10,14 @@
 
 	<body class="body">
         <div class="nav_list">
-			<a id="homepage" class="element" onmouseover="mouseHover('homepage')" onmouseleave="mouseLeave('homepage')" href="../../">Home</a>
-			<a id="projects" class="element" onmouseover="mouseHover('projects')" onmouseleave="mouseLeave('projects')" href="../../projects/">Projects</a>
-			<a id="webDesigns" class="element" onmouseover="mouseHover('webDesigns')" onmouseleave="mouseLeave('webDesigns')" href="../../web-designs/">Website Designs</a>
-			<a id="creativeWorks" class="element" onmouseover="mouseHover('creativeWorks')" onmouseleave="mouseLeave('creativeWorks')" href="../../creative-works/">Creative Works</a>
+			<a id="homepage" href="../../">Home</a>
+			<a id="homepage" href="../../media/Jessica-Davies-CV.pdf">CV</a>
+			<a id="projects" href="../../projects/">Projects</a>
+			<a id="webDesigns" href="../../web-designs/">Website Designs</a>
+			<a id="creativeWorks" href="../../creative-works/">Creative Works</a>
 		</div>
-		
-		<script>
-			function mouseHover(elementId) {
-                let e = document.getElementById(elementId);
-                let len = elementId.length;
 
-                e.style.borderBottom = 'solid rgb(1, 140, 221)';
-                e.style.paddingBottom = '5px';
-            }
-            function mouseLeave(elementId) {
-                let e = document.getElementById(elementId);
-                e.style.borderBottom = '0px solid black';
-                e.style.paddingBottom = '0px';
-            }
-		</script>
-
+		<img src="../../media/DOMKit-Logo.png" alt="The original DOMKit logo" width="400">
 		<h1 class="h1">DOMKit - The Docs</h1>
 		<hr style="color: white;">
 
@@ -37,463 +25,42 @@
 			<div class="desc">
 				<h2>Introduction</h2>
 				<p>DOMKit is an open-source HTML elements and CSS styling library, written entirely in JavaScript, used to simplify the creation of HTML elements and CSS styling options.</p>
-				<p>In the current version (V1.0), DOMKit provides 3 main JS files: <code>elements.js</code>, <code>displays.js</code> and <code>styles.js</code>.</p>
+				<p>In the current version (V1.0), DOMKit provides 4 main JS files: <code>elements.js</code>, <code>displays.js</code>, <code>styles.js</code> and <code>animations.js</code>.</p>
 			</div>
-
 			<div class="desc">
 				<h2>Adding DOMKit to Your Site</h2>
-				<p>Download the <code>src</code> folder from the Github repository into your code, then add the following line above any &lt;script&gt; tags, in the &lt;body&gt; tag.</p>
+				<p>Download the <code>src</code> folder from the <a href="https://github.com/jessicadavies2003/DOMKit">Github Repository</a> into your code, then add the following line above any &lt;script&gt; tags, in the &lt;body&gt; tag.</p>
 				<p id="code"> &lt;script src="/path/to/DOMKit/src/[scriptName].js"&gt;&lt;/script&gt; </p>
 			</div>
 			<hr style="color: white; width: 100%;">
-			<div class="desc">
+			<div id="elements" class="desc">
 				<h2>Elements</h2>
 				<p>This section outlines all functions used to create various HTML elements. These elements have some default styling applied to them, such as the navigation bar.</p>
-
-				<div class="func-wrapper">
-					<code> <b>createDropdown</b>(dropdownName, options, label, parent="body")</code>
-					<div class="funcDesc">
-						<p>Creates and returns a dropdown element, and adds it to the top of the DOM.</p>
-						<div class="param">
-							<p>
-								<code>dropdownName</code><br>
-								The name of the dropdown element.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>options</code><br>
-								A list of strings, where each string represents an option for the dropdown menu. The values for these options will be each option converted to lowercase, for simplicity.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>label</code><br>
-								The string to label the dropdown menu.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>parent</code><br>
-								ID of the parent element where the table should be added to. Defaulted to 'body'.
-							</p>
-						</div>
-					</div>
-					<div class="example">
-						<h3>Example</h3>
-						<p id="code">const cars = createDropdown("cars", ["Volkswagen", "Kia", "Mercedes-Benz"], "Select your favourite car brand.");</p>
-					</div>
-				</div>
-
-				<div class="func-wrapper">
-					<code> <b>createForm</b>(title, actionPage, inputData, parent="body")</code>
-					<div class="funcDesc">
-						<p>Creates and returns a form element, and adds it to the DOM.</p>
-						<div class="param">
-							<p>
-								<code>title</code><br>
-								The title of the form element, that will become a &lt;h1&gt; tag.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>actionPage</code><br>
-								An external page where the data should be sent. Usually a PHP page.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>inputData</code><br>
-								An object containing input data for the form. Keys are the labels, and the values are the type of input.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>parent</code><br>
-								ID of the parent element where the table should be added to. Defaulted to 'body'.
-							</p>
-						</div>
-					</div>
-					<div class="example">
-						<h3>Example</h3>
-						<p id="code">const signInForm = createForm("action.php", {"Username": "text", "Password": "password"});</p>
-					</div>
-				</div>
-
-				<div class="func-wrapper">
-					<code> <b>createNavBar</b>(links, bgColour, textColour="black", resetCSS=true)</code>
-					<div class="funcDesc">
-						<p>Creates and returns a nav element, with default styling for a navigation bar, and adds it to the top of the DOM.</p>
-						<div class="param">
-							<p>
-								<code>links</code><br>
-								An object containing data about each link of the nav bar, keys being the name and values being the filepaths for said name.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>bgColour</code><br>
-								A list containing three values: red, green, blue. For the background colour of the navigation bar.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>textColour</code><br>
-								A string indicating what colour the text should be. Defaulted to "Black".
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>resetCSS</code><br>
-								Indicates whether or not the cssReset() function should be called, which resets the browser's margin and padding values. Defaulted to "true".
-							</p>
-						</div>
-					</div>
-					<div class="example">
-						<h3>Example</h3>
-						<p id="code">const myNav = createNavBar({'Home': '', 'About': ''}, [66, 106, 190]);</p>
-					</div>
-				</div>
-
-				<div class="func-wrapper">
-					<code> <b>createTable</b>(headers, rowData, hasBorders=true, parent="body")</code>
-					<div class="funcDesc">
-						<p>Creates and returns a table element, and adds it to the DOM.</p>
-						<div class="param">
-							<p>
-								<code>headers</code><br>
-								A list containing the table headers.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>rowData</code><br>
-								A list of lists, where each list represents a row of the table.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>hasBorders</code><br>
-								Determines if the table should have borders. Defaulted to 'true'.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>parent</code><br>
-								ID of the parent element where the table should be added to. Defaulted to 'body'.
-							</p>
-						</div>
-					</div>
-					<div class="example">
-						<h3>Example</h3>
-						<p id="code">const myTable = createTable(["header1", "header2"], [["item1-header1", "item1-header2"], ["item2-header1", "item2-header2"]]);</p>
-					</div>
-				</div>
-
-				<div class="func-wrapper">
-					<code> <b>createVideoEl</b>(filepath, controls=true, parentID="body")</code>
-					<div class="funcDesc">
-						<p>Creates and returns a nav element, with default styling for a navigation bar, and adds it to the top of the DOM.</p>
-						<div class="param">
-							<p>
-								<code>filepath</code><br>
-								The filepath of the video.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>controls</code><br>
-								Determines whether or not the user can control the video by playing, pausing, etc. Defaulted to 'true'.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>parentID</code><br>
-								ID of the parent element where the table should be added to. Defaulted to 'body'.
-							</p>
-						</div>
-					</div>
-					<div class="example">
-						<h3>Example</h3>
-						<p id="code">const websiteDesign1 = createVideoEl("media/web_design_1.mp3");</p>
-					</div>
-				</div>
 			</div>
 			<hr style="color: white; width: 100%;">
-			<div class="desc">
+			<div id="displays" class="desc">
 				<h2>Displays</h2>
 				<p>This section outlines each of the display functions, used to create neater layouts.</p>
-
-				<div class="func-wrapper">
-					<code> <b>createFlexbox</b>(flexDirection, textCentered=true, hideOverflow=true, elemCentered=true, parent="body")</code>
-					<div class="funcDesc">
-						<p>Creates and returns a flexbox container.</p>
-						<div class="param">
-							<p>
-								<code>flexDirection</code><br>
-								The flex direction of the container. Either 'row' or 'column'.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>textCentered</code><br>
-								Determines if all text elements should be centered. Defaulted to 'true'.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>hideOverflow</code><br>
-								Determines if any overflowing elements should be hidden. Defaulted to 'true'.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>elemCentered</code><br>
-								Determines if all elements in the flexbox should be centered. Defaulted to 'true'.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>parent</code><br>
-								ID of the parent element where the table should be added to. Defaulted to 'body'.
-							</p>
-						</div>
-					</div>
-					<div class="example">
-						<h3>Example</h3>
-						<p id="code">const myFlexbox = createFlexbox("column", textCentered=true, parent="flexboxWrapper");</p>
-					</div>
-				</div>
-
-				<div class="func-wrapper">
-					<code> <b>createGrid</b>(numBoxes, boxColour, gridTemplateArea, gap, width, height, parent="body")</code>
-					<div class="funcDesc">
-						<p>Creates and returns a grid container.</p>
-						<div class="param">
-							<p>
-								<code>numBoxes</code><br>
-								The number of boxes that should be created inside the grid.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>boxColour</code><br>
-								A list containing three values: red, green, blue. For the background colour of each box element.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>gridTemplateArea</code><br>
-								A list, where each list inside the main list represents a row for the grid-template-area value. An `i`th box will have an ID of `box{i}`.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>gap</code><br>
-								Sets the distance between all box elements in the grid.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>width</code><br>
-								Width of each box that will be created and stored in the main DIV.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>height</code><br>
-								Height of each box that will be created and stored in the main DIV.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>parent</code><br>
-								ID of the parent element where the table should be added to. Defaulted to 'body'.
-							</p>
-						</div>
-					</div>
-					<div class="example">
-						<h3>Example</h3>
-						<p id="code">const myGrid = createGrid(3, [0, 128, 0], [["box1", "box1", "box1", "box3"], ["box2", "box2", "box2", "box3"]], "10px", "100px", "100px", parent="gridWrapper");</p>
-					</div>
-				</div>
+			</div>
+			<hr style="color: white; width: 100%;">
+			<div id="styles" class="desc">
+				<h2>Styles</h2>
+				<p>This section outlines each of the styling functions, used to style HTML elements and text. All of these functions do not return the element, as the element's styling is changed directly.</p>
+			</div>
+			<hr style="color: white; width: 100%;">
+			<div id="animations" class="desc">
+				<h2>Animations</h2>
+				<p>This section outlines the functions used for adding animations onto elements, such as rotation.</p>
 			</div>
 			<hr style="color: white; width: 100%;">
 			<div class="desc">
-				<h2>Styles</h2>
-				<p>This section outlines each of the styling functions, used to style HTML elements. All of these functions do not return the element, as the element's styling is changed directly.</p>
-
-				<div class="func-wrapper">
-					<code> <b>centerEl</b>(element)</code>
-					<div class="funcDesc">
-						<p>Uses flexbox to center a given element.</p>
-						<div class="param">
-							<p>
-								<code>element</code><br>
-								The HTML element to be centered.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="func-wrapper">
-					<code> <b>gradientBG</b>(element, direction, gradientType, colours, textColour="black")</code>
-					<div class="funcDesc">
-						<p>Adds a background gradient to an element.</p>
-						<div class="param">
-							<p>
-								<code>element</code><br>
-								The HTML element where the gradient will be applied, any type of HTML element will suffice.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>direction</code><br>
-								The direction of the gradient in `degrees`.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>gradientType</code><br>
-								Determines the gradient type to be used.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>colours</code><br>
-								A list of lists, where each list contains RGB values for each colour, allowing more than 2 colours.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>textColour</code><br>
-								Colour of the text inside the element. Defaulted to 'black'.
-							</p>
-						</div>
-					</div>
-					<div class="example">
-						<h3>Example</h3>
-						<p id="code">gradientBG(element, "90deg", "linear", [[128, 0, 0], [0, 128, 0], [0, 0, 128]], "white");</p>
-					</div>
-				</div>
-
-				<div class="func-wrapper">
-					<code> <b>textGradient</b>(element, direction, colours)</code>
-					<div class="funcDesc">
-						<p>Adds a gradient to an element's text.</p>
-						<div class="param">
-							<p>
-								<code>element</code><br>
-								The HTML element where the gradient will be applied, any type of HTML element will suffice.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>direction</code><br>
-								The direction of the gradient in `degrees`.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>colours</code><br>
-								A list of lists, where each list contains RGB values for each colour, allowing more than 2 colours.
-							</p>
-						</div>
-					</div>
-					<div class="example">
-						<h3>Example</h3>
-						<p id="code">textGradient(element, "90deg", [[128, 0, 0], [0, 128, 0], [0, 0, 128]]);</p>
-					</div>
-				</div>
-
-				<div class="func-wrapper">
-					<code> <b>shadowEffect</b>(element, facing, spread, colour)</code>
-					<div class="funcDesc">
-						<p>Adds a shadow effect to a given element.</p>
-						<div class="param">
-							<p>
-								<code>element</code><br>
-								The HTML element where the gradient will be applied, any type of HTML element will suffice.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>facing</code><br>
-								How far the shadow should spread in pixels.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>spread</code><br>
-								The direction that the element will face. Either `top-left`, `bottom-left`, `top-right`, `bottom-right`, or 'forward'.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>colour</code><br>
-								A list containing RGB values for the chosen colour.
-							</p>
-						</div>
-					</div>
-					<div class="example">
-						<h3>Example</h3>
-						<p id="code">shadowEffect(element, "top-right", "20px", [128, 0, 0]);</p>
-					</div>
-				</div>
-
-				<div class="func-wrapper">
-					<code> <b>glassmorphism</b>(wrapperEl, section, bgImgPath, width="50%", padding="20px", addShadow=true, blur="5px")</code>
-					<div class="funcDesc">
-						<p>Adds a glassmorphism effect to a given element.</p>
-						<div class="param">
-							<p>
-								<code>wrapperEl</code><br>
-								The HTML DIV element that includes the section element where the effect will be applied.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>section</code><br>
-								The section element within `wrapperEl`. This will include things like a header, text, a CTA button, etc.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>bgImgPath</code><br>
-								The path to the image that will be placed on the background.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>width</code><br>
-								The width of the element with ID `sectionID`. Defaulted to '50%', half of the width of its parent element.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>padding</code><br>
-								Determines the padding that'll get applied to all elements in the element with ID `sectionID`. Defaulted to '20px'.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>addShadow</code><br>
-								Determines if the glassmorphism effect should have a shadow effect. Defaulted to 'true'.
-							</p>
-						</div>
-						<div class="param">
-							<p>
-								<code>blur</code><br>
-								The amount of blur in the backdrop filter. Defaulted to '5px'.
-							</p>
-						</div>
-					</div>
-					<div class="example">
-						<h3>Example</h3>
-						<p id="code">glassmorphism(divEl, mySection, "media/cool-bg.jpg");</p>
-					</div>
-				</div>
+				<h2>Getting Started with DOMKit</h2>
+				<p>If you are unsure where to begin with experimenting with DOMKit's range of functions, try out some test scripts in the Repository's <code>tests</code> folder.</p>
 			</div>
-		</div>
+
+		<script src="scripts/domkit-elements.js"></script>
+		<script src="scripts/domkit-displays.js"></script>
+		<script src="scripts/domkit-styles.js"></script>
+		<script src="scripts/domkit-animations.js"></script>
 	</body>
 </html>

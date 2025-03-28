@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet"/>
+		<link rel="stylesheet" href="../navbar-style.css">
 		<link rel="stylesheet" href="web_designs.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Web Designs - Jessica Davies</title>
@@ -9,26 +10,12 @@
 
 	<body class="body">
         <div class="nav_list">
-			<a id="homepage" class="element" onmouseover="mouseHover('homepage')" onmouseleave="mouseLeave('homepage')" href="../index.html">Home</a>
-			<a id="projects" class="element" onmouseover="mouseHover('projects')" onmouseleave="mouseLeave('projects')" href="../projects/">Projects</a>
-			<a id="webDesigns" class="element" onmouseover="mouseHover('webDesigns')" onmouseleave="mouseLeave('webDesigns')" href="../web_designs">Website Designs</a>
-			<a id="creativeWorks" class="element" onmouseover="mouseHover('creativeWorks')" onmouseleave="mouseLeave('creativeWorks')" href="../creative-works/">Creative Works</a>
+			<a href="../index.html">Home</a>
+			<a href="../media/Jessica-Davies-CV.pdf">CV</a>
+			<a href="../projects/">Projects</a>
+			<a href="../web_designs">Website Designs</a>
+			<a href="../creative-works/">Creative Works</a>
 		</div>
-
-		<script>
-			function mouseHover(elementId) {
-                let e = document.getElementById(elementId);
-                let len = elementId.length;
-
-                e.style.borderBottom = 'solid rgb(1, 140, 221)';
-                e.style.paddingBottom = '5px';
-            }
-            function mouseLeave(elementId) {
-                let e = document.getElementById(elementId);
-                e.style.borderBottom = '0px solid black';
-                e.style.paddingBottom = '0px';
-            }
-		</script>
 
 		<h1 class="h1">Website Designs</h1>
 		<hr style="color: white;">
@@ -37,6 +24,16 @@
 
 		<h3 style="color: white; text-align: center;">A compilation of website designs I've created as a front-end web designer.</h3>
 		<div class="theDesigns">
+			<div class="design">
+				<video controls>
+					<source src="../media/Web-Designs/web_design_1.mp4">
+				</video>
+				<p><b>A concept homepage for a friend's organisation; Quantum Productions.</b></p>
+				<p>Languages Used: <b>HTML, CSS, JavaScript</b></p>
+				<p>Screenshot Taken 28th March 2025</p>
+				<br>
+			</div>
+
 			<div class="design">
 				<img src="../media/Web-Designs/web_design_2.png">
 				<p><b>A concept landing page for a fictional company called SereneSounds.</b></p>
@@ -49,9 +46,9 @@
 				<video controls>
 					<source src="../media/Web-Designs/web_design_3.mp4">
 				</video>
-				<p><b>A concept homepage for a friend's organisation called Aural Productions.</b></p>
+				<p><b>A(n updated) concept homepage for a friend's organisation; Aural Productions.</b></p>
 				<p>Languages Used: <b>HTML, CSS, JavaScript</b></p>
-				<p>Screen Recording Taken 22th September 2024</p>
+				<p>Screen Recording Taken 20th March 2024</p>
 				<br>
 			</div>
 

@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet"/>
+		<link rel="stylesheet" href="../../navbar-style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="creativeWriting.css">
 		<title>Creative Writing - Jessica Davies</title>
@@ -9,26 +10,12 @@
 
 	<body>
 		<div class="nav_list">
-			<a id="homepage" class="element" onmouseover="mouseHover('homepage')" onmouseleave="mouseLeave('homepage')" href="../../index.html">Home</a>
-			<a id="myworks" class="element" onmouseover="mouseHover('myworks')" onmouseleave="mouseLeave('myworks')" href="../">Projects</a>
-			<a id="mydesigns" class="element" onmouseover="mouseHover('mydesigns')" onmouseleave="mouseLeave('mydesigns')" href="../../web-designs/">Website Designs</a>
-			<a id="creativeWorks" class="element" onmouseover="mouseHover('creativeWorks')" onmouseleave="mouseLeave('creativeWorks')" href="../">Creative Works</a>
+			<a id="homepage" href="../../index.html">Home</a>
+			<a id="homepage" href="../../media/Jessica-Davies-CV.pdf">CV</a>
+			<a id="myworks" href="../">Projects</a>
+			<a id="mydesigns" href="../../web-designs/">Website Designs</a>
+			<a id="creativeWorks" href="../">Creative Works</a>
 		</div>
-
-		<script>
-			function mouseHover(elementId) {
-                let e = document.getElementById(elementId);
-                let len = elementId.length;
-
-                e.style.borderBottom = 'solid rgb(1, 140, 221)';
-                e.style.paddingBottom = '5px';
-            }
-            function mouseLeave(elementId) {
-                let e = document.getElementById(elementId);
-                e.style.borderBottom = '0px solid black';
-                e.style.paddingBottom = '0px';
-            }
-		</script>
 
 		<h1 class="h1">Creative Writing</h1>
 		<hr style="color: white;">

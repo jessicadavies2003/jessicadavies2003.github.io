@@ -10,6 +10,34 @@ Will Brighton finally find out who the culprit of this disturbing case really is
         genre: "Murder Mystery",
         teasers: {
             teaser1: {
+                teaserTitle: "Update 2",
+                teaserDate: "26th March 2025",
+                teaserText: `Chapter 1 and the prologue are now officially completed! The old chapter 1 had to be rewritten to fit the new narrative.<br><br>
+The draft for chapter 2 is complete! Just needs some tweaking, and it will be finished!<br><br>
+Chapter 3 onwards still needs their drafts completed, but overall, the story is fitting really well!<br><br>
+Thank you all for your patience!<br><br>
+13 pages, 5700+ words, 6 Chapters`
+            },
+            teaser2: {
+                teaserTitle: "Teaser 2 - Project Reveal Video",
+                teaserDate: "13th March 2025",
+                teaserText: `The first video that reveals the project by providing a small teaser from the prologue.<br><br>
+<video id="projectReveal" controls>
+    <source src="promo-material/colin-oslyn-project-reveal.mp4">
+</video><br><br>
+View the YT channel for updates & trailers <a href="https://www.youtube.com/@JessicaDavies-2003">here</a>.<br><br>
+Updates will continue here as well, until the full story is avaliable on Wattpad.`
+            },
+            teaser3: {
+                teaserTitle: "Update 1",
+                teaserDate: "10th March 2025",
+                teaserText: `Chapter 1 is now fully completed, after the teaser was reworked and finalised!<br><br>
+Prologue draft is now complete, a bit of tweaking and it should be complete.<br><br>
+Chapter 2 onwards still needs their drafts completed, but overall, looking good so far! Very excited when the story is complete!<br><br>
+It has been confirmed that there will be a YouTube audiobook released after the story is completed and uploaded to Wattpad. VAs may be needed, this will be decided after the completion of the story.<br><br>
+12 pages, 5000+ words`
+            },
+            teaser4: {
                 teaserTitle: "Teaser 1 - Chapter 1 Draft Preview",
                 teaserDate: "24th February 2025",
                 teaserText: `"Detective!" Jamie called to Detective Brighton from her office door. Brighton was finishing up her report on a previous case report.<br><br>
@@ -28,25 +56,6 @@ Brighton let out a sigh. "Alright." She spoke, with a hint of annoyance in her t
 She made her way to her desk to grab her jacket. While doing so, she looked over to James' office to see if he was there. No sign of him, so he must have been called earlier about this new case, or working on a different one. Who knows?<br><br>
 She confidently walked down the spiral staircase, and straight to the front door. Once outside, she took a moment to breathe in the fresh air, before heading to her car.
                 `
-            },
-            teaser2: {
-                teaserTitle: "Update 1",
-                teaserDate: "10th March 2025",
-                teaserText: `Chapter 1 is now fully completed, after the teaser was reworked and finalised!<br><br>
-Prologue draft is now complete, a bit of tweaking and it should be complete.<br><br>
-Chapter 2 onwards still needs their drafts completed, but overall, looking good so far! Very excited when the story is complete!<br><br>
-It has been confirmed that there will be an audiobook released after the story is completed and uploaded to Wattpad. VAs may be needed, this will be decided after the completion of the story.<br><br>
-12 pages, 5000+ words`
-            },
-            teaser3: {
-                teaserTitle: "Teaser 2 - Project Reveal Video",
-                teaserDate: "13th March 2025",
-                teaserText: `The first video that reveals the project by providing a small teaser from the prologue.<br><br>
-<video id="projectReveal" controls>
-    <source src="promo-material/colin-oslyn-project-reveal.mp4">
-</video><br><br>
-View the YT channel for updates & trailers <a href="https://www.youtube.com/@JessicaDavies-2003">here</a>.<br><br>
-Updates will continue here as well, until the full story is avaliable on Wattpad.`
             },
         }
     }

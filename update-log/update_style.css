@@ -1,16 +1,9 @@
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
 body {
     font-family: Baskervville, serif;
     background: rgb(16,24,32);
     background: linear-gradient(180deg, rgba(16,24,32,1) 0%, rgba(4,88,136,1) 50%, rgba(0,161,251,1) 100%);
     background-size: cover;
     background-repeat: no-repeat;
-    animation-name: fadeIn;
-    animation-duration: 5s;
 }
 
 .nav_list {
@@ -27,10 +20,9 @@ body {
     font-size: 17px;
 }
 
-.nav_list element {
-    padding: 50px;
-    padding-left: 50px;
-    display: inline;
+.nav_list a:hover {
+    border-bottom: 1px solid rgb(1, 140, 221);
+    cursor: pointer;
 }
 
 .h1 {
@@ -49,20 +41,20 @@ body {
     padding: 20px 20px 20px 20px;
 }
 
-.desc p {
+.wrapper p {
     font-size: 1.05em;
 }
 
-.desc a {
+.wrapper a {
     color: white;
 }
 
 @media screen and (max-width: 800px) {
-    .desc {
+    .wrapper {
         width: 90%;
     }
 
-    .desc p {
+    .wrapper p {
         font-size: 1em;
     }
 }

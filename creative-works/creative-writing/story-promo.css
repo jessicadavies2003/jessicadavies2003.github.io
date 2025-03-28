@@ -16,30 +16,6 @@ p {
     color: white;
 }
 
-.nav_list {
-    overflow: hidden;
-    padding-left: 3%;
-}
-  
-.nav_list a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.nav_list element {
-    padding: 50px;
-    padding-left: 50px;
-    display: inline;
-}
-
-.nav_list:hover {
-    color: blue;
-}
-
 .h1 {
     text-align: center;
     font-size: 3em;
@@ -102,10 +78,8 @@ a {
     #coverImg {
         width: 200px;
     }
-}
 
-@media screen and (max-width: 500px) {
-    #oldCover {
+    #projectReveal {
         width: 100%;
     }
 }

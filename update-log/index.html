@@ -2,6 +2,7 @@
 <html>
 	<head>
         <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="../navbar-style.css">
 		<link rel="stylesheet" href="update_style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Website Update Log - Jessica Davies</title>
@@ -9,31 +10,25 @@
 
 	<body class="body">
         <div class="nav_list">
-			<a id="homepage" class="element" onmouseover="mouseHover('homepage')" onmouseleave="mouseLeave('homepage')" href="../index.html">Home</a>
-			<a id="projects" class="element" onmouseover="mouseHover('projects')" onmouseleave="mouseLeave('projects')" href="../projects/">Projects</a>
-			<a id="webDesigns" class="element" onmouseover="mouseHover('webDesigns')" onmouseleave="mouseLeave('webDesigns')" href="../web-designs">Website Designs</a>
-			<a id="creativeWorks" class="element" onmouseover="mouseHover('creativeWorks')" onmouseleave="mouseLeave('creativeWorks')" href="../creative-works/">Creative Works</a>
+			<a href="../">Home</a>
+			<a href="media/Jessica-Davies-CV.pdf">CV</a>
+			<a href="projects/">Projects</a>
+			<a href="web-designs/">Website Designs</a>
+			<a href="creative-works/">Creative Works</a>
 		</div>
-
-		<script>
-			function mouseHover(elementId) {
-                let e = document.getElementById(elementId);
-                let len = elementId.length;
-
-                e.style.borderBottom = 'solid rgb(1, 140, 221)';
-                e.style.paddingBottom = '5px';
-            }
-            function mouseLeave(elementId) {
-                let e = document.getElementById(elementId);
-                e.style.borderBottom = '0px solid black';
-                e.style.paddingBottom = '0px';
-            }
-		</script>
 
 		<h1 class="h1">Website Update Log</h1>
         <hr>
 
         <div class="desc">
+            <h2>Version 4.1 - March XX, 2025</h2>
+            <p>Added my CV to the navigation bar.</p>
+            <p>Fixed navigation bar</p>
+            <p>More functions added to DOMKit documentation, as well as updating the UI of it.</p>
+            <p>New update for creative writing story: <b>Colin Oslyn: A Cold Case</b></p>
+            <p>New website designs!</p>
+            <br>
+
             <h2>Version 4.0 - March 17, 2025</h2>
             <h3>The Big Docs & Updates... update</h3>
             <p>Added documentation for DOMKit.</p>

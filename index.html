@@ -3,33 +3,20 @@
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="navbar-style.css">
 		<link rel="stylesheet" href="index.css">
 		<title>Home - Jessica Davies</title>
 	</head>
 
 	<body>
 		<div class="nav_list">
-			<a id="homepage" class="element" onmouseover="mouseHover('homepage')" onmouseleave="mouseLeave('homepage')" href="">Home</a>
-			<a id="projects" class="element" onmouseover="mouseHover('projects')" onmouseleave="mouseLeave('projects')" href="projects/">Projects</a>
-			<a id="webDesigns" class="element" onmouseover="mouseHover('webDesigns')" onmouseleave="mouseLeave('webDesigns')" href="web-designs/">Website Designs</a>
-			<a id="creativeWorks" class="element" onmouseover="mouseHover('creativeWorks')" onmouseleave="mouseLeave('creativeWorks')" href="creative-works/">Creative Works</a>
+			<a id="homepage" class="element">Home</a>
+			<a id="cv" class="element" href="media/Jessica-Davies-CV.pdf">CV</a>
+			<a id="projects" class="element" href="projects/">Projects</a>
+			<a id="webDesigns" class="element" href="web-designs/">Website Designs</a>
+			<a id="creativeWorks" class="element" href="creative-works/">Creative Works</a>
 		</div>
-
-		<script>
-			function mouseHover(elementId) {
-                let e = document.getElementById(elementId);
-                let len = elementId.length;
-
-                e.style.borderBottom = 'solid rgb(1, 140, 221)';
-                e.style.paddingBottom = '5px';
-            }
-            function mouseLeave(elementId) {
-                let e = document.getElementById(elementId);
-                e.style.borderBottom = '0px solid black';
-                e.style.paddingBottom = '0px';
-            }
-		</script>
-
+`
 		<h1 class="h1">Home</h1>
 		<hr style="color: white;">
 
@@ -87,7 +74,7 @@
 			<br>
 
 			<div class="info" id="5">
-				<h2>Recent Updates - Version 4.0</h2>
+				<h2>Recent Updates - Version 4.1</h2>
 				<p>Updated various parts around the website.</p>
 				<p>To see the full log of website updates, click <a href="update-log/">here</a>.</p>
 			</div>
@@ -101,14 +88,8 @@
 					<img src="media/DOMKit-Logo.png" alt="The DOMKit Logo" width="300">
 					<p>Introducing... <b>DOMKit</b>! A HTML elements library designed to simplify the creation of essential HTML elements, while also applying some default styling. Easy to download and import into your website, and ensures that website creation is much faster for you.</p>
 					<!-- <p><a href="https://github.com/jessicadavies2003/DOMKit">View the repository!</a></a></p> -->
-					<p>Hmmm... The repository seems to be set to private.</p>
+					<p>Hmmm... The repository seems to be set to private. Check back later for updates!</p>
 					<p>However, you can now check the docs <a href="projects/domkit-docs/">here</a>!</p>
-				</div>
-				<hr style="color: white;">
-				<div class="currentProject">
-					<img src="media/CodeQuestRush-Logo.png" alt="The CodeQuestRush Logo" width="150">
-					<p>Also introducing... <b>CodeQuestRush</b>! A speed coding game designed to test how quickly you can think and code simultaneously. With levels ranging from Easy to Expert, new and experienced programmers are welcome to come and try it out!</p>
-					<p>No preview or article is avaliable... <i>yet</i>!</p>
 				</div>
 			</div>
 
@@ -138,7 +119,7 @@
 		<script>
 			const maxNum = 8;
 			document.body.onload = function(){
-				for (let i = 2; i < maxNum+2; i++) {
+				for (let i = 2; i < maxNum+1; i++) {
 					let current = document.getElementById(i.toString());
 					current.hidden = true;
 				}

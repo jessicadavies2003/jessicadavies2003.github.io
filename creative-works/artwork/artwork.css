@@ -15,26 +15,6 @@ p {
     color: azure;
 }
 
-.nav_list {
-    overflow: hidden;
-    padding-left: 3%;
-}
-  
-.nav_list a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.nav_list element {
-    padding: 50px;
-    padding-left: 50px;
-    display: inline;
-}
-
 .h1 {
     text-align: center;
     font-size: 3em;
@@ -65,7 +45,7 @@ img {
     height: 300px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .theDesigns {
         flex-direction: column;
     }
