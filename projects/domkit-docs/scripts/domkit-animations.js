@@ -9,6 +9,16 @@ const animationFuncsObj = {
             iterationCount: "How many times the animation should be repeated. `Infinity` counts as a number."
         },
         example: "rotateAnimation(element, 'rotating', '5s', 360, Infinity);"
+    },
+    slideInText: {
+        'desc': 'Adds a slide-in animation to the inner text of a given HTML element.',
+        'params': {
+            'elementID': 'ID of the HTML element where the effect will be applied, any type of HTML element will suffice.',
+            'direction': 'The direction that the element will slide from.', 'duration': 'How long the element will slide for.',
+            'timingFunction': 'the time an animation uses to change from one set of CSS styles to another.',
+            'animationName': 'The name of the animation. Defaulted to `slidein`.'
+        },
+        'example': 'slideInText("myText", "left", "2s", "linear");'
     }
 };
 
