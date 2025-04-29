@@ -21,7 +21,7 @@
 		<hr style="color: white;">
 
 		<div class="wrapper">
-			<div class="info first" id="1">
+			<div class="info" id="1">
 				<div id="borderBG"></div>
 				<p>Hello there! I see you've stumbled across my website!</p>
 				<p>Allow me to introduce myself.</p>
@@ -69,7 +69,7 @@
 			<br>
 
 			<div class="info" id="5">
-				<h2>Recent Updates - Version 4.2</h2>
+				<h2>Recent Updates - Version 4.2.1</h2>
 				<p>Updated various parts around the website.</p>
 				<p>To see the full log of website updates, click <a href="update-log/">here</a>.</p>
 			</div>
@@ -112,31 +112,42 @@
 			const maxNum = infoElements.length;
 			document.body.onload = function(){
 				for (let i = 2; i < maxNum+1; i++) {
-					let current = document.getElementById(i.toString());
+					const current = document.getElementById(i.toString());
 					current.hidden = true;
 				}
 			}
 
-			let currentNum = 1;
-			document.addEventListener("keypress", (ev) => {
-				document.getElementById(currentNum.toString()).hidden = true;
+			function sleep(s) {
+				return new Promise(resolve => setTimeout(resolve, s*1000));
+			}
 
-				if (ev.key === "d") {
-					if (currentNum >= maxNum) {
-						currentNum = 1;
-					} else {
-						currentNum += 1;
-					}
-				} else if (ev.key === "a") {
-					if (currentNum <= 1) {
-						currentNum = maxNum;
-					} else {
-						currentNum -= 1;
-					}
+			async function hiddenAnim(curr) {
+				await sleep(2);
+				curr.hidden = true;
+			}
+
+			let currentNum = 1;
+			const seconds = 7;
+			setInterval(() => {
+				if (currentNum > maxNum) {
+					currentNum = 1;
+				} else if (currentNum < 1) {
+					currentNum = maxNum;
 				}
 
-				document.getElementById(currentNum.toString()).hidden = false;
-			})
+				// hide the previous
+				let curr = document.getElementById(currentNum.toString());
+				curr.classList.remove("showing");
+				curr.classList.add("hiding");
+				hiddenAnim(curr);
+
+				currentNum++;
+				// display the next
+				curr = document.getElementById(currentNum.toString());
+				curr.classList.remove("hiding");
+				curr.classList.add("showing");
+				curr.hidden = false;
+			}, seconds*1000);
 		</script>
 	</body>
 </html>
