@@ -5,7 +5,7 @@ const elementsFuncsObj = {
             dropdownName: "The name of the dropdown element.",
             options: "A list of strings representing dropdown options. Values will be lowercase.",
             label: "The string to label the dropdown menu.",
-            parent: "ID of the parent element where the dropdown should be added. Default: 'body'."
+            parentID: "ID of the parent element where the dropdown should be added. Default: 'body'."
         },
         example: "const cars = createDropdown('cars', ['Volkswagen', 'Kia', 'Mercedes-Benz'], 'Select your favourite car brand.');"
     },
@@ -15,7 +15,7 @@ const elementsFuncsObj = {
             title: "The title of the form element, which will be an <h1> tag.",
             actionPage: "An external page where form data should be sent.",
             inputData: "An object containing input data. Keys are labels, values are input types.",
-            parent: "ID of the parent element where the form should be added. Default: 'body'."
+            parentID: "ID of the parent element where the form should be added. Default: 'body'."
         },
         example: "const signInForm = createForm('action.php', { 'Username': 'text', 'Password': 'password' });"
     },
@@ -35,7 +35,7 @@ const elementsFuncsObj = {
             headers: "A list containing the table headers.",
             rowData: "A list of lists, where each list represents a row of the table.",
             hasBorders: "Boolean determining if the table should have borders (default: true).",
-            parent: "ID of the parent element where the table should be added. Default: 'body'."
+            parentID: "ID of the parent element where the table should be added. Default: 'body'."
         },
         example: "const myTable = createTable(['header1', 'header2'], [['item1-header1', 'item1-header2'], ['item2-header1', 'item2-header2']]);"
     },
@@ -47,6 +47,17 @@ const elementsFuncsObj = {
             parentID: "ID of the parent element where the video should be added. Default: 'body'."
         },
         example: "const websiteDesign1 = createVideoEl('media/web_design_1.mp3');"
+    },
+    createToggle: {
+        'desc': 'Creates and returns a DIV element for a light and dark mode toggle switch, and adds it to the DOM.',
+        'params': {
+            'width': 'The width of the element. Height will be calculated using this value.',
+            'toggleColour': 'A list containing three values: red, green, blue. For the background colour of the toggle.',
+            'switchColour': 'A list containing three values: red, green, blue. For the colour of the toggle switch.',
+            'themes': 'An object, where keys are `light` and `dark`, and values',
+            parentID: 'ID of the parent element where the form should be added to. Defaulted to `body`.'
+        },
+        'example': 'const toggleWrapper = createToggle("100px", [128, 128, 128], [255, 255, 255], {\'light\': [[0, 0, 0], [255, 255, 255]], \'dark\': [[255, 255, 255], [37, 37, 38]]});'
     }
 };
 

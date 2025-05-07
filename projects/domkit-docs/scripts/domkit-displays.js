@@ -6,7 +6,7 @@ const displaysFuncsObj = {
             textCentered: "Boolean to determine if text should be centered (default: true).",
             hideOverflow: "Boolean to determine if overflowing elements should be hidden (default: true).",
             elemCentered: "Boolean to determine if elements should be centered (default: true).",
-            parent: "ID of the parent element where the flexbox should be added. Default: 'body'."
+            parentID: "ID of the parent element where the flexbox should be added. Default: 'body'."
         },
         example: "const myFlexbox = createFlexbox('column', true, true, true, 'flexboxWrapper');"
     },
@@ -19,7 +19,7 @@ const displaysFuncsObj = {
             gap: "The gap between grid elements.",
             width: "Width of each box.",
             height: "Height of each box.",
-            parent: "ID of the parent element where the grid should be added. Default: 'body'."
+            parentID: "ID of the parent element where the grid should be added. Default: 'body'."
         },
         example: "const myGrid = createGrid(3, [0, 128, 0], [['box1', 'box1', 'box1', 'box3'], ['box2', 'box2', 'box2', 'box3']], '10px', '100px', '100px', 'gridWrapper');"
     }
