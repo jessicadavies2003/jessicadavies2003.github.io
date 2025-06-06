@@ -19,6 +19,13 @@ let styleFuncsObj = {
         },
         'example': 'centerEl(element);'
     },
+    'centerText': {
+        'desc': 'Centers the inner text of a given element.',
+        'params': {
+            'element': 'The element that contains text to be centered.'
+        },
+        'example': 'centerText(myHeading);'
+    },
     'gradientBG': {
         'desc': 'Adds a background gradient to an element.',
         'params': {

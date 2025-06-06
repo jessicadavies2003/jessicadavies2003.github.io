@@ -11,17 +11,18 @@ const displaysFuncsObj = {
         example: "const myFlexbox = createFlexbox('column', true, true, true, 'flexboxWrapper');"
     },
     createGrid: {
-        'desc': "Creates and returns a grid container.",
+        'desc': 'Creates and returns a grid container.',
         'params': {
-            numBoxes: "Number of boxes to be created inside the grid.",
-            boxColour: "A list of three values (R, G, B) for the background color of each box.",
-            gridTemplateArea: "A list representing grid-template-area rows. Box IDs follow 'box{i}'.",
-            gap: "The gap between grid elements.",
-            width: "Width of each box.",
-            height: "Height of each box.",
-            parentID: "ID of the parent element where the grid should be added. Default: 'body'."
+            'boxColour': 'A list containing three values: red, green, blue. For the background colour of each box element.',
+            'gridTemplateArea': 'A list, where each list inside the main list represents a row for the grid-template-area value. An `i`th box will have an ID of `box{i}`.',
+            'gap': 'Sets the distance between all box elements in the grid.',
+            'width': 'Width of each box that will be created and stored in the main DIV.',
+            'height': 'Height of each box that will be created and stored in the main DIV.',
+            'boxRadius': 'Specifies the radius for each box in the grid. Defaulted to `0%`.',
+            'centered': 'Determines whether or not the grid should be centered. Defaulted to `true`',
+            'parentID': 'ID of the parent element where the element should be added to. Defaulted to `body`.'
         },
-        example: "const myGrid = createGrid(3, [0, 128, 0], [['box1', 'box1', 'box1', 'box3'], ['box2', 'box2', 'box2', 'box3']], '10px', '100px', '100px', 'gridWrapper');"
+        'example': `const myGrid = createGrid([0, 128, 0], [ ["box1", "box1", "box1"], ["box2", "box3", "box3"], ["box2", "box3", "box3"] ], "10px", "100px", "100px", "20%");`
     }
 };
 

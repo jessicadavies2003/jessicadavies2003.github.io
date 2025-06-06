@@ -50,6 +50,10 @@ p {
     height: auto;
 }
 
+.pics {
+    width: 100%;
+}
+
 @media screen and (max-width: 800px) {
     .desc {
         width: 90%;

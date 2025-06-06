@@ -60,14 +60,10 @@ p {
     justify-content: center;
     box-shadow: -5px 5px 20px 5px;
 }
-
-#projectReveal {
-    width: 60%;
-}
-
+/* 
 .imgs {
-    width: 30%;
-}
+    width: 50%;
+} */
 
 a {
     color: white;
@@ -86,11 +82,7 @@ a {
         width: 80%;
     }
 
-    #coverImg {
-        width: 200px;
-    }
-
-    #projectReveal {
+    .imgs {
         width: 100%;
     }
 }
