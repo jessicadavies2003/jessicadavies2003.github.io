@@ -62,11 +62,8 @@ p {
     flex-direction: column;
     width: 80%;
     margin: auto;
-    box-shadow: 0px 0px 20px 5px rgb(255, 255, 20);
-    backdrop-filter: blur(10px);
-    animation: borderAnimation 3s linear infinite;
-    /* overflow-x: hidden; */
-    overflow-y: scroll;
+    /* box-shadow: 0px 0px 20px 5px rgb(255, 255, 20);
+    animation: borderAnimation 3s linear infinite; */
 }
 
 .hidden {
@@ -94,8 +91,8 @@ button[id="left"] {
     margin: auto;
     width: 70%;
     padding: 0px 15px 0px 15px;
-    text-align: center;
     color: azure;
+    text-align: center;
     vertical-align: middle;
 }
 
@@ -130,6 +127,8 @@ button[id="left"] {
 
 #jessica {
     border-radius: 50%;
+    box-shadow: 0px 0px 20px 5px rgb(255, 255, 20);
+    animation: borderAnimation 3s linear infinite;
 }
 
 @keyframes slideIn {
@@ -164,6 +163,11 @@ button[id="left"] {
     animation: slideOut 2s linear;
     opacity: 0;
     transform: translateX(999px);
+}
+
+.desc {
+    text-align: left;
+    width: 90%;
 }
 
 @media screen and (max-width: 800px) {

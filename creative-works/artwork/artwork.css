@@ -11,50 +11,55 @@ p {
     font-size: 20px;
 }
 
-.v {
-    color: azure;
+.h1, #desc {
+    text-align: center;
 }
 
 .h1 {
-    text-align: center;
     font-size: 3em;
 }
 
-.theDesigns {
+#theDesigns, .art-section {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    text-align: center;
     justify-content: center;
-    gap: 20px;
-    margin-right: 20px;
+    width: 70%;
     margin: auto;
 }
 
-.theDesigns, .desc {
-    text-align: center;
+#theDesigns {
+    flex-direction: row;
+    gap: 30px;
 }
 
-.design-wrapper {
-    width: 20%;
-    border-right: 1px solid white;
+.art-section {
+    flex-direction: column;
     border-bottom: none;
+    border-right: 2px solid azure;
+    padding-right: 20px;
 }
 
-img {
-    height: 300px;
+.card {
+    width: 50%;
+    margin: auto;
+}
+
+.character {
+    width: 50%;
 }
 
 @media screen and (max-width: 1000px) {
-    .theDesigns {
+    #theDesigns {
         flex-direction: column;
     }
 
-    .design-wrapper {
-        width: 80%;
-        border-right: none;
-        border-bottom: 1px solid white;
+    .art-section {
+        flex-direction: column;
+        width: 90%;
         margin: auto;
+        border-right: none;
+        border-bottom: 2px solid azure;
+        padding-right: 20px;
     }
 
     img {

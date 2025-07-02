@@ -3,7 +3,6 @@ const stories = {
         title: "Colin Oslyn: A Shocking Case",
         img: "promo-material/Cover-Art-Colin-Oslyn.png",
         summary: `From the mind of Jessica Davies, comes the cruel and shocking case of a famous painter, Colin Oslyn, who was found dead with little to no evidence that point to any leads.<br><br>
-Colin Oslyn was a famous abstract painter, and had many known and loving fans complimenting and praising his work. Unfortunately, he was found dead in his art room, a stab wound to the chest.<br><br>
 Detective Brighton (female) is told to take on the case, with her good friend James Smith in the forensics team, and faces multiple red herrings throughout the case.<br><br>
 Will Brighton finally find out who the culprit of this disturbing case really is? Or will she be stuck in a wormhole with no way out?
         `,
@@ -14,7 +13,7 @@ Will Brighton finally find out who the culprit of this disturbing case really is
             teaser1: {
                 teaserTitle: "Promotional Illustration #1",
                 teaserDate: "2nd June 2025",
-                teaserText: `An illustration from chapter 1 of Colin Oslyn: A Shocking Case. Investigation time with Detective Brighton and Jacob Smith.<br><br>
+                teaserText: `An illustration from chapter 2 of Colin Oslyn: A Shocking Case. Investigation time with Detective Brighton and Jacob Smith.<br><br>
 <img class="imgs" src="promo-material/colin-oslyn-illustration-1.png" alt="investigation time with Detective Brighton and Jacob Smith" width="60%">`
             },
             teaser2: {

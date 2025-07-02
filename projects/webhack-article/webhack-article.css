@@ -1,0 +1,86 @@
+body {
+    font-family: Baskervville, serif;
+    background: rgb(16,24,32);
+    background: linear-gradient(180deg, rgba(16,24,32,1) 0%, rgba(4,88,136,1) 50%, rgba(0,161,251,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.h1 {
+    width: 70%;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    margin: auto;
+}
+
+p {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    color: azure;
+    margin: auto;
+}
+
+.desc {
+    border-radius: 25px;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    box-sizing: content-box;
+    width: 70%;
+    height: auto;
+}
+
+.desc p {
+    font-size: 1.1em;
+}
+
+.designs {
+    border-radius: 25px;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    box-sizing: content-box;
+    width: 70%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 5s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.screenshots {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    /* .desc {
+        width: 90%;
+    }
+
+    .desc p {
+        font-size: 1em;
+    } */
+
+    .wrapper {
+        width: 90vw;
+    }
+}

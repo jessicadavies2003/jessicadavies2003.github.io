@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet"/>
+		<link rel="stylesheet" href="../../navbar-style.css">
+		<link rel="stylesheet" href="webhack-article.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WebHack - Challenge Your Web Security Knowledge - Jessica Davies</title>
+	</head>
+
+	<body class="body">
+        <div class="nav_list">
+			<a id="homepage" href="../../">Home</a>
+			<a id="homepage" href="../../media/Jessica-Davies-CV.pdf">CV</a>
+			<a id="projects" href="../../projects/">Projects</a>
+			<a id="webDesigns" href="../../web-designs/">Website Designs</a>
+			<a id="creativeWorks" href="../../creative-works/">Creative Works</a>
+		</div>
+
+		<img src="../../media/WebHack-logo.png" alt="The original WebHack logo" width="400">
+		<h1 class="h1">WebHack - Challenge Your Web Security Knowledge</h1>
+		<h3 style="color: white;">In this article, we talk about WebHack, as well as showing and solving two challenges to demonstrate how they work.</h3>
+		<h3 style="color: white;">Article Published 02/07/2025 (DD/MM/YYYY)</h3>
+		<hr style="color: white;">
+
+		<div class="wrapper">
+			<div class="desc hidden">
+				<h2>What Even is WebHack?</h2>
+				<p>WebHack is the site, written in PHP, for hackers, new and experienced, to test their hacking skills in a safe and friendly environment. Here, you will learn Cyber Security for websites, and get hands-on practice with challenges.</p>
+				<p>This site was created by only myself, and I'm very excited when the site is at the stage to be published online one day.</p>
+				<p>The following screenshot depicts the minimal design for the homepage. This may be subject to change in the near future.</p>
+				<img src="images/homepage.png" alt="The WebHack homepage" class="screenshots">
+			</div>
+			<div class="desc hidden">
+				<h2>The Primary Focus</h2>
+				<p>Our focus is on website security, and keeping your website secured from pesky hackers. From the simplest ways of security, to more advanced security measures.</p>
+				<p>We also touch on cryptography and the importance of censoring personal information, as well as ways to crack many different ciphers, so you understand how they work and what you can do to make your system uncrackable.</p>
+			</div>
+			<div class="desc hidden">
+				<h2>A History</h2>
+				<p>WebHack was first created on the 16th January 2025, and is yet to be released publicly. Its primary inspiration was from a site called <a href="https://www.hackthissite.org/">HackThisSite</a>, a site dedicated to helping hackers, ranging from new to experienced, to improve upon their security skills by completing challenges.</p>
+				<p>These challenges would either be a dummy login page, or an entire dummy website, with intentional bugs and weaknesses. A user would be asked to find some sort of password to gain access to the system by finding those weaknesses.</p>
+				<p>As time went on, I grew a liking towards cryptography and staganography, and began to understand their roles in website security. That's when I started finding and completing cryptography challenges from many different websites, such as <a href="https://cryptohack.org/">CryptoHack</a> and <a href="https://cryptopals.com/">CryptoPals</a>.</p>
+			</div>
+			<div class="desc hidden">
+				<h2>Challenges</h2>
+				<p>At the current time of writing this article, WebHack provides 2 types of challenges; <b>JavaScript</b> and <b>Cryptography</b>. Let's first look at the JavaScript challenges.</p>
+				<p>The following screenshot depicts the main page for the JavaScript challenges. This may be subject to change in the near future.</p>
+				<img src="images/js-challenges.png" alt="The main page for the JavaScript challenges" class="screenshots">
+				<p>Each challenge has a small description, followed by its difficulty and a button entitled "Take this challenge!" that takes you to that challenge.</p>
+			</div>
+			<div class="desc hidden">
+				<h2>Solving a Challenge - JavaScript Level 1</h2>
+				<p>Firstly, for this showcase, I will show and solve the very first level of the JavaScript challenges. Let's open "JavaScript - Level 1" and take a look at the challenge.</p>
+				<img src="images/js-level-1-unsolved.png" alt="Level 1 of the JavaScript challenges" class="screenshots">
+				<p>We're introduced to this character known as "Bartholomew" (I know, <i>great</i> name) who's just starting to learn JavaScript, and that he doesn't know anything about website security.</p>
+				<p>We need a password to pass the level, and of course, the password won't be shown immediately to us, so we need to do a small amount of digging to get it.</p>
+				<p>There's two ways to use JavaScript in a website; with the &lt;script&gt; tag then code inside of it, or with the same tag but specifying an external source file with the JavaScript code inside.</p>
+				<p>Knowing this, we can check the website's code to spot any JavaScript. We can do this by right clicking anywhere on the webpage, and selecting "Inspect" or "Inspect Element"</p>
+				<img src="images/js-level-1-inspect.png" alt="Inspecting the HTML code of JavaScript challenge Level 1" class="screenshots">
+				<p>Check the &lt;script&gt; tag, "Bartholomew" has created a function to check if a password is correct. Look closer, and you can see the correct password in the variable 'correctPass'.</p>
+				<p>The correct password is 'cookie'! Typing that into the given input box, we get the following output.</p>
+				<img src="images/js-level-1-correct.png" alt="Inspecting the HTML code of JavaScript challenge Level 1" class="screenshots">
+				<p>Hooray! We completed the challenge! However, if you type the incorrect password, this is what you will see.</p>
+				<img src="images/js-level-1-incorrect.png" alt="Inspecting the HTML code of JavaScript challenge Level 1" class="screenshots">
+				<p>That's the JavaScript challenge! Of course, there's a few more, but we won't go through them in this article.</p>
+			</div>
+			<div class="desc hidden">
+				<h2>Solving a Challenge - Cryptography Level 1</h2>
+				<p>I will now show and solve the very first level of the Cryptography challenges. Let's open "Cryptography - Level 1" and have a look at the challenge.</p>
+				<img src="images/crypto-lvl-1-unsolved.png" alt="Level 1 of the Cryptography challenges" class="screenshots">
+				<p>We're starting very simple with this first level. A list of numbers, and in the description, it states "A = 1, B = 2, etc.". Going by this logic, we need to take each number and get its corresponding letter. I wrote a very simple Python script in Python's IDLE that does the job for me.</p>
+				<img src="images/crypto-lvl-1-py.png" alt="" class="screenshots">
+				<p>According to my script, the decoded message is "ilovecookies"! Let's type that in and see what the webpage says.</p>
+				<img src="images/crypto-lvl-1-correct.png" alt="Inputting the correct a Cryptography challenge Level 1" class="screenshots">
+				<p>Nice! We've completed another challenge! Now, if we typed the wrong password, this is what you will see.</p>
+				<img src="images/crypto-lvl-1-incorrect.png" alt="Inspecting the HTML code of Cryptography challenge Level 1" class="screenshots">
+				<p>That's the Cryptography challenge! Of course, there's a few more, but we won't go through them in this article.</p>
+			</div>
+			<div class="desc hidden">
+				<h2>Conclusion</h2>
+				<p>So, there you have it, a small showcase of WebHack and what it's all about. Of course, with most software, things can be subject to change, so be aware of that!</p>
+				<p>If you have any feedback for me (which I would <b>love</b> to hear!), all of my contact details can be found on the <a href="../../index.html">homepage</a>.</p>
+				<p>Thank you very much for reading this article, and I hope you enjoyed reading about WebHack.</p>
+				<p>Until next time!</p>
+			</div>
+		</div>
+
+		<script>
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add("show");
+					} else {
+						entry.target.classList.remove("show");
+					}
+				})
+			})
+
+			const hiddenElements = document.querySelectorAll(".hidden");
+			hiddenElements.forEach((el) => observer.observe(el));
+		</script>
+	</body>
+</html>
