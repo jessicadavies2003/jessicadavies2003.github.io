@@ -11,12 +11,18 @@ Will Brighton finally find out who the culprit of this disturbing case really is
         teasers: {
             // recent updates go first, earlier ones go last
             teaser1: {
+                teaserTitle: "Promotional Illustration #2",
+                teaserDate: "26th July 2025",
+                teaserText: `An illustration from chapter 1 of Colin Oslyn: A Shocking Case. A mobile phone call from Jamie Donaldson to Detective Brighton.<br><br>
+<img class="imgs" src="promo-material/colin-oslyn-illustration-2.png" alt="a mobile phone call from Jamie Donaldson to Detective Brighton" width="60%">`
+            },
+            teaser2: {
                 teaserTitle: "Promotional Illustration #1",
                 teaserDate: "2nd June 2025",
                 teaserText: `An illustration from chapter 2 of Colin Oslyn: A Shocking Case. Investigation time with Detective Brighton and Jacob Smith.<br><br>
 <img class="imgs" src="promo-material/colin-oslyn-illustration-1.png" alt="investigation time with Detective Brighton and Jacob Smith" width="60%">`
             },
-            teaser2: {
+            teaser3: {
                 teaserTitle: "New Cover Image",
                 teaserDate: "17th May 2025",
                 teaserText: `All credit for this image goes to my friend Callum Stook. Thank you mate!<br><br>
