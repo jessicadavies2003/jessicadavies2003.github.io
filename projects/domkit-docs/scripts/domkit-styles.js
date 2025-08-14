@@ -1,4 +1,13 @@
 let styleFuncsObj = {
+    addBorder: {'desc': 'Adds a customised border to a HTML element.', 'params': {'element': 'The element that the border will be applied to.', 'thickness': 'Determines the thickness of the border.', 'borderType': 'One of the following: [`solid`, `dotted`, `double`, `groovy`]', 'colour': 'A list that contains RGB value for the desired colour.', 'borderPadding': 'Hiw much padding to be added to the border.'}, 'example': 'addBorder(element, "2px", "solid", [128, 0, 0], "10px");'},
+    'centerEl': {
+        'desc': 'Uses flexbox to center a given element.',
+        'params': {
+            'element': 'The HTML element to be centered.'
+        },
+        'example': 'centerEl(element);'
+    },
+    centerText: {'desc': 'Centers the inner text of a given element.', 'params': {'element': 'The element that contains text to be centered.', 'horizontalOrVertical': 'Determines if the text should be centered horizontally or vertically. Accepted values: `horizontal`, `vertical`. Default `horizontal`', 'sizeOfElement': 'The size of the element in pixels. Defaulted to `null`.'}, 'example': 'centerText(element, "vertical", "20px");'},
     'glassmorphism': {
         'desc': 'Adds a glassmorphism effect to a given element.',
         'params': {
@@ -11,20 +20,6 @@ let styleFuncsObj = {
             'blur': "The amount of blur in the backdrop filter. Defaulted to '5px'."
         },
         'example': 'glassmorphism(divEl, mySection, "media/cool-bg.jpg");'
-    },
-    'centerEl': {
-        'desc': 'Uses flexbox to center a given element.',
-        'params': {
-            'element': 'The HTML element to be centered.'
-        },
-        'example': 'centerEl(element);'
-    },
-    'centerText': {
-        'desc': 'Centers the inner text of a given element.',
-        'params': {
-            'element': 'The element that contains text to be centered.'
-        },
-        'example': 'centerText(myHeading);'
     },
     'gradientBG': {
         'desc': 'Adds a background gradient to an element.',
@@ -46,6 +41,7 @@ let styleFuncsObj = {
         },
         'example': 'textGradient(element, "90deg", [[128, 0, 0], [0, 128, 0], [0, 0, 128]]);'
     },
+    setWebpageFont: {'desc': "Set's the font for the webpage.", 'params': {'familyName': 'The family name of the desired font. This must be in lowercase.'}, 'example': 'setWebpageFont("sans-serif");'},
     'shadowEffect': {
         'desc': 'Adds a shadow effect to a given element.',
         'params': {

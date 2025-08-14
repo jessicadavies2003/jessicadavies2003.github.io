@@ -1,53 +1,29 @@
 const elementsFuncsObj = {
-    createDropdown: {
-        'desc': "Creates and returns a dropdown element, and adds it to the top of the DOM.",
-        'params': {
-            dropdownName: "The name of the dropdown element.",
-            options: "A list of strings representing dropdown options. Values will be lowercase.",
-            label: "The string to label the dropdown menu.",
-            parentID: "ID of the parent element where the dropdown should be added. Default: 'body'."
-        },
-        example: "const cars = createDropdown('cars', ['Volkswagen', 'Kia', 'Mercedes-Benz'], 'Select your favourite car brand.');"
-    },
-    createForm: {
-        'desc': "Creates and returns a form element, and adds it to the DOM.",
-        'params': {
-            title: "The title of the form element, which will be an <h1> tag.",
-            actionPage: "An external page where form data should be sent.",
-            inputData: "An object containing input data. Keys are labels, values are input types.",
-            parentID: "ID of the parent element where the form should be added. Default: 'body'."
-        },
-        example: "const signInForm = createForm('action.php', { 'Username': 'text', 'Password': 'password' });"
-    },
+    createDropdown: {'desc': 'Creates and returns a dropdown element, and adds it to the DOM.', 'params': {'dropdownName': 'The name of the dropdown.', 'options': 'A list of strings, where each string represents an option for the dropdown menu.', 'label': 'The string to label the dropdown menu.', 'parentID': 'ID of the parent element where the table should be added to. Defaulted to `body`.'}, 'example': 'const cars = createDropdown("cars", ["Volkswagen", "Kia", "Mercedes-Benz"], "Select your favourite car brand.");'},
+    createForm: {'desc': 'Creates and returns a form element, and adds it to the DOM.', 'params': {'title': 'The name of the form element.', 'inputData': 'An object containing input data for the form. Keys are the labels, and the values are the type of input.', 'gap': 'A value (in pixels) that determines the gap between all elements.', 'centerVertically': 'Boolean to determine if all input fields should be centered. Defaulted to `true`.', 'actionPage': 'An external page where the data should be sent. Usually a PHP page. Defaulted to `null`.', 'parent': 'ID of the parent element where the form should be added to. Defaulted to `body`.'}, 'example': 'const signInForm = createForm("Sign In", {"Username": "text", "Password": "password"}, "20px", {actionPage="action.php"});'},
     createNavBar: {
-        'desc': "Creates and returns a nav element with default styling for a navigation bar.",
+        'desc': 'Creates and returns a nav element, with default styling for a navigation bar, and adds it to the top of the DOM.',
         'params': {
-            links: "An object where keys are link names and values are file paths.",
-            bgColour: "A list of three values (R, G, B) for the background color.",
-            textColour: "Text color (default: 'black').",
-            resetCSS: "Boolean to determine if cssReset() should be called (default: true)."
+            'links': 'An object containing data about each link of the nav bar, keys being the name and values being the filepaths for said name.',
+            'bgColour': 'A list containing three values: red, green, blue. For the background colour of the navigation bar.',
+            'paddingSize': 'Determines how much padding will be added to the nav bar. Defaulted to `15px`.',
+            'textColour': 'A list containing three values: red, green, blue for the text colour. Defaulted to `[0, 0, 0]` for black.',
+            'opacity': 'A number to determine how transparent the navigation bar should be. Defaulted to `1` for no transparency.',
+            'resetCSS': 'Indicates whether or not the `cssReset()` function should be called. See the docs for more info. Defaulted to `true`.'
         },
-        example: "const myNav = createNavBar({'Home': '', 'About': ''}, [66, 106, 190]);"
+        'example': "const myNav = createNavBar({'Home': '', 'About': 'about.html'}, [66, 106, 190], {resetCSS: false});"
     },
     createTable: {
-        'desc': "Creates and returns a table element, and adds it to the DOM.",
+        'desc': 'Creates and returns a table element, and adds it to the DOM.',
         'params': {
-            headers: "A list containing the table headers.",
-            rowData: "A list of lists, where each list represents a row of the table.",
-            hasBorders: "Boolean determining if the table should have borders (default: true).",
-            parentID: "ID of the parent element where the table should be added. Default: 'body'."
+            'headers': 'A list containing the table headers.',
+            'rowData': 'A list of lists, where each list represents a row of the table.',
+            'hasBorders': 'Determines if the table should have borders. Defaulted to `true`.',
+            'parentID': 'ID of the parent element where the table should be added to. Defaulted to `body`.'
         },
-        example: "const myTable = createTable(['header1', 'header2'], [['item1-header1', 'item1-header2'], ['item2-header1', 'item2-header2']]);"
+        'example': 'const myTable = createTable(["header1", "header2"], [["item1-header1", "item1-header2"], ["item2-header1", "item2-header2"]], {parentID: "body"});'
     },
-    createVideoEl: {
-        'desc': "Creates and returns a video element with optional controls.",
-        'params': {
-            filepath: "The filepath of the video.",
-            controls: "Boolean to determine if video controls should be enabled (default: true).",
-            parentID: "ID of the parent element where the video should be added. Default: 'body'."
-        },
-        example: "const websiteDesign1 = createVideoEl('media/web_design_1.mp3');"
-    },
+    createVideoEl: {'desc': 'Creates and returns a video element, and adds it to the DOM.', 'params': {'filepath': 'The filepath of the video.', 'controls': 'Determines whether or not the user can control the video by playing, pausing, etc. Defaulted to `true`.', 'parent': 'ID of the parent element where the video should be added to. Defaulted to `body`.'}, 'example': 'const myVideo = createVideoEl("mediawebsite-design.mp3", {parentID: "myDiv"});'},
     createToggle: {
         'desc': 'Creates and returns a DIV element for a light and dark mode toggle switch, and adds it to the DOM.',
         'params': {

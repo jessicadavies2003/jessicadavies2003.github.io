@@ -41,20 +41,20 @@ body {
     padding: 20px 20px 20px 20px;
 }
 
-.wrapper p {
+.desc p {
     font-size: 1.05em;
 }
 
-.wrapper a {
-    color: white;
+.desc a {
+    color: rgb(0, 213, 255);
 }
 
 @media screen and (max-width: 800px) {
-    .wrapper {
+    .desc {
         width: 90%;
     }
 
-    .wrapper p {
+    .desc p {
         font-size: 1em;
     }
 }

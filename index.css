@@ -131,6 +131,29 @@ button[id="left"] {
     animation: borderAnimation 3s linear infinite;
 }
 
+/* .socialLink {
+    width: 1rem;
+} */
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#social-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: auto;
+}
+
+.social-icons {
+    width: 3rem;
+}
+
 @keyframes slideIn {
     0% {
         opacity: 0;
