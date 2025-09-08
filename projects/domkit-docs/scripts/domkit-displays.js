@@ -1,14 +1,14 @@
 const displaysFuncsObj = {
     createFlexbox: {
-        'desc': "Creates and returns a flexbox container.",
+        'desc': 'Creates and returns a flexbox container.',
         'params': {
-            flexDirection: "The flex direction of the container ('row' or 'column').",
-            textCentered: "Boolean to determine if text should be centered (default: true).",
-            hideOverflow: "Boolean to determine if overflowing elements should be hidden (default: true).",
-            elemCentered: "Boolean to determine if elements should be centered (default: true).",
-            parentID: "ID of the parent element where the flexbox should be added. Default: 'body'."
+            'flexDirection': "The flex direction of the container. Either 'row' or 'column'.",
+            'textCentered': "Determines if all text elements should be centered. Defaulted to 'true'.",
+            'hideOverflow': "Determines if any overflowing elements should be hidden. Defaulted to 'true'.",
+            'elemCentered': "Determines if all elements in the flexbox should be centered. Defaulted to 'true'.",
+            'parentID': "ID of the parent element where the video should be added to. Defaulted to 'body'."
         },
-        example: "const myFlexbox = createFlexbox('column', true, true, true, 'flexboxWrapper');"
+        'example': 'const myFlexbox = createFlexbox(flexDirection, {parent: "flex-wrapper"})'
     },
     createGrid: {
         'desc': 'Creates and returns a grid container.',
@@ -22,7 +22,7 @@ const displaysFuncsObj = {
             'centered': 'Determines whether or not the grid should be centered. Defaulted to `true`',
             'parentID': 'ID of the parent element where the element should be added to. Defaulted to `body`.'
         },
-        'example': `const myGrid = createGrid([0, 128, 0], [ ["box1", "box1", "box1"], ["box2", "box3", "box3"], ["box2", "box3", "box3"] ], "10px", "100px", "100px", "20%");`
+        'example': 'const myGrid = createGrid([0, 128, 0], [ ["box1", "box1", "box1"], ["box2", "box3", "box3"], ["box2", "box3", "box3"] ], "10px", "100px", "100px", {boxRadius:"20%"});'
     }
 };
 

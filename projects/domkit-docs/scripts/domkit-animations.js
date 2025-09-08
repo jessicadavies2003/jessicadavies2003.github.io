@@ -21,17 +21,6 @@ const animationFuncsObj = {
             'animationName': 'The name of the animation. Defaulted to `slidein`.'
         },
         'example': 'slideInText("myText", "left", "2s", "linear");'
-    },
-    typingAnimation: {
-        'desc': 'Adds a typing animation to the inner text of a given HTML element.',
-        'params': {
-            'elementID': 'ID of the HTML element where the effect will be applied, any type of HTML element will suffice.',
-            'fontSize': "The size of the text's font.",
-            'bgColour': 'The background colour of either the parent element, or website `body`.',
-            'isLooped': 'Determines if the typing animation will loop continuously.',
-            'typingMiliseconds': 'Time (in miliseconds) between each character being "typed".'
-        }, 
-        'example': 'typingAnimation("myText", "50px", [255, 255, 255], true, 250);'
     }
 };
 

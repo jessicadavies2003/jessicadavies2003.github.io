@@ -131,6 +131,10 @@ button[id="left"] {
     animation: borderAnimation 3s linear infinite;
 }
 
+/* .socialLink {
+    width: 1rem;
+} */
+
 #socials {
     display: flex;
     flex-direction: row;
@@ -214,5 +218,4 @@ button[id="left"] {
         width: 20%;
         font-size: 1.3rem;
     }
-
 }

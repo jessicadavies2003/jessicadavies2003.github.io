@@ -2,9 +2,9 @@ const stories = {
     'colin-oslyn': {
         title: "Colin Oslyn: A Shocking Case",
         img: "promo-material/Cover-Art-Colin-Oslyn.png",
-        summary: `From the mind of Jessica Davies, comes the cruel and shocking case of a famous painter, Colin Oslyn, who was found dead with little to no evidence that point to any leads.<br><br>
-Detective Brighton (female) is told to take on the case, with her good friend James Smith in the forensics team, and faces multiple red herrings throughout the case.<br><br>
-Will Brighton finally find out who the culprit of this disturbing case really is? Or will she be stuck in a wormhole with no way out?
+        summary: `From the mind of Jessica Davies, comes the cruel and shocking case of the famous abstract painter, Colin Oslyn, who was found dead with little to no evidence, pointing to any leads. Colin was loved by all. He was supported by many people; his family, friends, boss, and his loyal fanbase. What could have happened for him to deserve this?<br><br>
+Detective Brighton is told to take on this interesting case, with her two good friends in the crime squad, Jacob Smith and Milton Lee.<br><br>
+What will they uncover? Who is the true murderer of this case? And why is this case so... shocking?
         `,
         genre: "Murder Mystery",
         bg: "linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(117, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%)",
@@ -26,7 +26,7 @@ Will Brighton finally find out who the culprit of this disturbing case really is
                 teaserTitle: "New Cover Image",
                 teaserDate: "17th May 2025",
                 teaserText: `All credit for this image goes to my friend Callum Stook. Thank you mate!<br><br>
-<img src="promo-material/Cover-Art-Colin-Oslyn.png" width="50%">`
+<img src="promo-material/Cover-Art-Colin-Oslyn.png" width="40%">`
             }
         }
     }
