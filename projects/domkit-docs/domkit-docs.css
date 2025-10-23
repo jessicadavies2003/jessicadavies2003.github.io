@@ -80,4 +80,8 @@ a {
     .wrapper {
         width: 100vw;
     }
+
+    .desc p {
+        font-size: 15px;
+    }
 }

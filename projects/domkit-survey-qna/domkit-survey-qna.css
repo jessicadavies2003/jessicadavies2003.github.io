@@ -52,7 +52,11 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-    .wrapper {
-        width: 100vw;
+    .desc {
+        width: 100%;
+    }
+
+    .desc p {
+        font-size: 15px;
     }
 }

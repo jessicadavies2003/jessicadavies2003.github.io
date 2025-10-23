@@ -21,6 +21,14 @@ const animationFuncsObj = {
             'animationName': 'The name of the animation. Defaulted to `slidein`.'
         },
         'example': 'slideInText("myText", "left", "2s", "linear");'
+    },
+    fadeInScrollEffect: {
+        'desc': 'Adds a "fade in scroll" effect to all elements inside a given parent element ID.',
+        'params': {
+            'parentID': 'Parent ID of all HTML element where the effect will be applied.',
+            'duration': 'How long each element will fade in for (in seconds). Default value is `5`.'
+        },
+        'example': 'fadeInScrollEffect("paragraphs");'
     }
 };
 

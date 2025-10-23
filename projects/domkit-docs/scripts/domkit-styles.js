@@ -41,7 +41,14 @@ let styleFuncsObj = {
         },
         'example': 'textGradient(element, "90deg", [[128, 0, 0], [0, 128, 0], [0, 0, 128]]);'
     },
-    setWebpageFont: {'desc': "Set's the font for the webpage.", 'params': {'familyName': 'The family name of the desired font. This must be in lowercase.'}, 'example': 'setWebpageFont("sans-serif");'},
+    setElementStyle: {
+        'desc': 'Given an object of CSS styles, sets these styles to a given element.',
+        'params': {
+            'elementID': 'ID of the element to be styled.',
+            'cssStylesObj': 'An object containing various CSS attributes and your choice for each. See example for clarification.'
+        },
+        'example': 'setElementStyle("myButton", {"background-color": "white", "color": "black", "border": "2px double brown"});'
+    },
     'shadowEffect': {
         'desc': 'Adds a shadow effect to a given element.',
         'params': {
