@@ -23,7 +23,7 @@ p {
 .wrapper {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     color: azure;
     margin: auto;
 }
@@ -34,7 +34,6 @@ p {
     text-align: center;
     margin: auto;
     box-sizing: content-box;
-    width: 70%;
     height: auto;
 }
 
@@ -55,7 +54,6 @@ p {
 a {
     text-decoration: none;
     color: black;
-    font-weight: bold;
 }
 
 .hidden {
@@ -72,15 +70,11 @@ a {
 }
 
 @media screen and (max-width: 800px) {
-    /* .desc {
+    .wrapper {
         width: 90%;
     }
 
-    .desc p {
-        font-size: 1em;
-    } */
-
-    .wrapper {
-        width: 90vw;
+    .wrapper p {
+        font-size: 15px;
     }
 }

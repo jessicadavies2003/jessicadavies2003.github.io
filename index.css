@@ -53,10 +53,16 @@ p {
     }
 }
 
+#jessica {
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 5px rgb(255, 255, 20);
+    animation: borderAnimation 3s linear infinite;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
 
@@ -83,8 +89,8 @@ button[id="left"] {
 
 .info {
     margin: auto;
-    width: 70%;
-    padding: 0px 15px 0px 15px;
+    width: 100%;
+    padding: 2rem 0px;
     color: azure;
     text-align: center;
     vertical-align: middle;
@@ -97,6 +103,12 @@ button[id="left"] {
 
 .info a:hover {
     border-bottom: 1px solid azure;
+}
+
+.info h1 {
+    background: -webkit-linear-gradient(90deg, rgb(217, 255, 0),rgb(241, 40, 40));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .row {
@@ -112,22 +124,18 @@ button[id="left"] {
     padding: 0 30px;
 }
 
-.currentProject {
+#project-wrapper {
     display: flex;
+    flex-direction: row;
+}
+
+.currentProject {
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0px 2rem;
 }
-
-#jessica {
-    border-radius: 50%;
-    box-shadow: 0px 0px 20px 5px rgb(255, 255, 20);
-    animation: borderAnimation 3s linear infinite;
-}
-
-/* .socialLink {
-    width: 1rem;
-} */
 
 #socials {
     display: flex;
@@ -171,13 +179,13 @@ button[id="left"] {
 }
 
 .showing {
-    animation: slideIn 2s linear;
+    animation: slideIn 1s linear;
     opacity: 1;
     transform: translateX(0);
 }
 
 .hiding {
-    animation: slideOut 2s linear;
+    animation: slideOut 1s linear;
     opacity: 0;
     transform: translateX(999px);
 }
@@ -196,7 +204,7 @@ button[id="left"] {
         font-size: 15px;
     }
 
-    .info, #borderBG {
+    #borderBG, .wrapper {
         width: 90%;
     }
 

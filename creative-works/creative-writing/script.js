@@ -2,8 +2,9 @@ const stories = {
     'colin-oslyn': {
         title: "Colin Oslyn: A Shocking Case",
         img: "promo-material/Cover-Art-Colin-Oslyn.png",
-        summary: `From the mind of Jessica Davies, comes the cruel and shocking case of the famous abstract painter, Colin Oslyn, who was found dead with little to no evidence, pointing to any leads. Colin was loved by all. He was supported by many people; his family, friends, boss, and his loyal fanbase. What could have happened for him to deserve this?<br><br>
-Detective Brighton is told to take on this interesting case, with her two good friends in the crime squad, Jacob Smith and Milton Lee.<br><br>
+        summary: `From the mind of Jessica Davies, comes the cruel and shocking case of the famous abstract painter, Colin Oslyn. Found dead... With little evidence pointing to any leads.<br><br>
+Colin was loved by all. He was supported by many people; his family, friends, boss, and his loyal fanbase. What could have happened for him to deserve this?<br><br>
+Enter Brighton, the amazing detective, who is told to take on this special case with her two good friends in the crime squad, Jacob Smith (the beloved forensics scientist) and Milton Lee (the incredible researcher).<br><br>
 What will they uncover? Who is the true murderer of this case? And why is this case so... shocking?
         `,
         genre: "Murder Mystery",
@@ -11,21 +12,42 @@ What will they uncover? Who is the true murderer of this case? And why is this c
         teasers: {
             // recent updates go first, earlier ones go last
             teaser1: {
+                teaserTitle: "Teaser #1 - Prologue",
+                teaserDate: "28th October 2025",
+                teaserText: `A small snippet from the Prologue. Keep in mind that this can (and will most likely) change.<br><br>
+<br><br>
+A quiet atmosphere inside the art room. Tranquil. Peaceful.<br><br>
+A wooden paint brush glides across the sunset-coloured canvas in a guided manner, leaving a smooth trail of orange colour in its path.<br><br>
+Red, orange and yellow sit beside the canvas, as well as a transparent cup of coloured water, awaiting to be utilised.<br><br>
+A man sits at the centre of it all. Beautiful pieces hang neatly above his desk. His shoulders resting, his breathing calm, his hand continue to slide the paint brush across the canvas.<br><br>
+The artist remained facing away from the door, painting on the canvas on the table in front.<br><br>
+He wore a long-sleeved black button-up dress shirt, done up all the way, along with a pair of blue denim jeans. A white painting apron is placed over his clothing, protecting him from stains and paint.<br><br>
+His name?<br><br>
+<b>Colin Oslyn.</b>
+`
+            },
+            teaser2: {
+                teaserTitle: "[WORK IN PROGRESS] Sketches of the Cast!",
+                teaserDate: "28th October 2025",
+                teaserText: `A handful of the cast from Colin Oslyn: A Shocking Case. Including Detective Brighton, Colin Oslyn, and others!<br><br>
+<img class="imgs" src="promo-material/wip-character-sketches-colin-oslyn.jpg" alt="Sketches of the cast" width="50%">`
+            },
+            teaser3: {
                 teaserTitle: "Promotional Illustration #2",
                 teaserDate: "26th July 2025",
                 teaserText: `An illustration from chapter 1 of Colin Oslyn: A Shocking Case. A mobile phone call from Jamie Donaldson to Detective Brighton.<br><br>
 <img class="imgs" src="promo-material/colin-oslyn-illustration-2.png" alt="a mobile phone call from Jamie Donaldson to Detective Brighton" width="60%">`
             },
-            teaser2: {
+            teaser4: {
                 teaserTitle: "Promotional Illustration #1",
                 teaserDate: "2nd June 2025",
                 teaserText: `An illustration from chapter 2 of Colin Oslyn: A Shocking Case. Investigation time with Detective Brighton and Jacob Smith.<br><br>
 <img class="imgs" src="promo-material/colin-oslyn-illustration-1.png" alt="investigation time with Detective Brighton and Jacob Smith" width="60%">`
             },
-            teaser3: {
+            teaser5: {
                 teaserTitle: "New Cover Image",
                 teaserDate: "17th May 2025",
-                teaserText: `All credit for this image goes to my friend Callum Stook. Thank you mate!<br><br>
+                teaserText: `All credit for this image (apart from the pic of me) goes to my friend Callum Stook. Thank you mate!<br><br>
 <img src="promo-material/Cover-Art-Colin-Oslyn.png" width="40%">`
             }
         }
@@ -38,7 +60,7 @@ const id = params.get('id');
 document.querySelector("title").textContent = `${stories[id]['title']} - Jessica Davies`;
 document.body.style.background = stories[id]['bg'];
 
-document.getElementById('bookTitle').textContent = stories[id]['title'];
+document.getElementById('bookTitle').textContent = `${stories[id]['title']} - Promotion`;
 document.getElementById('coverImg').src = stories[id]['img'];
 document.getElementById('summary').innerHTML = stories[id]['summary'];
 document.getElementById('genre').textContent = `Genre: ${stories[id]['genre']}`;
