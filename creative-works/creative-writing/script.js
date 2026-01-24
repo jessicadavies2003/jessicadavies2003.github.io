@@ -12,39 +12,44 @@ What will they uncover? Who is the true murderer of this case? And why is this c
         teasers: {
             // recent updates go first, earlier ones go last
             teaser1: {
-                teaserTitle: "Teaser #1 - Prologue",
-                teaserDate: "28th October 2025",
-                teaserText: `A small snippet from the Prologue. Keep in mind that this can (and will most likely) change.<br><br>
-<br><br>
-A quiet atmosphere inside the art room. Tranquil. Peaceful.<br><br>
-A wooden paint brush glides across the sunset-coloured canvas in a guided manner, leaving a smooth trail of orange colour in its path.<br><br>
-Red, orange and yellow sit beside the canvas, as well as a transparent cup of coloured water, awaiting to be utilised.<br><br>
-A man sits at the centre of it all. Beautiful pieces hang neatly above his desk. His shoulders resting, his breathing calm, his hand continue to slide the paint brush across the canvas.<br><br>
-The artist remained facing away from the door, painting on the canvas on the table in front.<br><br>
-He wore a long-sleeved black button-up dress shirt, done up all the way, along with a pair of blue denim jeans. A white painting apron is placed over his clothing, protecting him from stains and paint.<br><br>
-His name?<br><br>
-<b>Colin Oslyn.</b>
-`
+                teaserTitle: "Book Milestone #1 - 30k Words!",
+                teaserDate: "30th November 2025",
+                teaserText: `I just hit over 30,000 words on my Colin Oslyn: A Shocking Case book, so I wanted to write a little post here about it!<br><br>
+Current number of chapters: 13<br><br>
+Prologue, Chapters 1-7 & Chapter 9 are almost fully written. (with the prologue being the closest to being finished)<br><br>
+Chapter 8 has just begun work.<br><br>
+The last 3 chapters are in their draft state.<br><br>
+The beginning and ending have already been written, a bit of the middle bit is also done, but now needs to be connected to the ending.<br><br>
+Thank you to everyone who has followed along with this journey so far! I'm excited to share more news about it in the near future.<br><br>
+With love, Jessica<br><br>
+<img class="imgs" src="promo-material/colin-oslyn-manuscript-cover-30k.png" alt="Manuscript cover for Colin Oslyn: A Shocking case, with the handwritten text '30k words! (so far)'." width="30%">`
             },
             teaser2: {
+                teaserTitle: "Teaser #1 - Prologue",
+                teaserDate: "28th October 2025",
+                teaserText: `The very first page of the entire manuscript. Keep in mind that this can (and will most likely) change.<br><br>
+<img class="imgs" src="promo-material/first-page-manuscript.png" alt="The very first page of the entire manuscript" width="40%">
+`
+            },
+            teaser3: {
                 teaserTitle: "[WORK IN PROGRESS] Sketches of the Cast!",
                 teaserDate: "28th October 2025",
                 teaserText: `A handful of the cast from Colin Oslyn: A Shocking Case. Including Detective Brighton, Colin Oslyn, and others!<br><br>
 <img class="imgs" src="promo-material/wip-character-sketches-colin-oslyn.jpg" alt="Sketches of the cast" width="50%">`
             },
-            teaser3: {
+            teaser4: {
                 teaserTitle: "Promotional Illustration #2",
                 teaserDate: "26th July 2025",
                 teaserText: `An illustration from chapter 1 of Colin Oslyn: A Shocking Case. A mobile phone call from Jamie Donaldson to Detective Brighton.<br><br>
 <img class="imgs" src="promo-material/colin-oslyn-illustration-2.png" alt="a mobile phone call from Jamie Donaldson to Detective Brighton" width="60%">`
             },
-            teaser4: {
+            teaser5: {
                 teaserTitle: "Promotional Illustration #1",
                 teaserDate: "2nd June 2025",
                 teaserText: `An illustration from chapter 2 of Colin Oslyn: A Shocking Case. Investigation time with Detective Brighton and Jacob Smith.<br><br>
 <img class="imgs" src="promo-material/colin-oslyn-illustration-1.png" alt="investigation time with Detective Brighton and Jacob Smith" width="60%">`
             },
-            teaser5: {
+            teaser6: {
                 teaserTitle: "New Cover Image",
                 teaserDate: "17th May 2025",
                 teaserText: `All credit for this image (apart from the pic of me) goes to my friend Callum Stook. Thank you mate!<br><br>
