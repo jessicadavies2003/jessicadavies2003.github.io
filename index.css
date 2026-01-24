@@ -134,6 +134,10 @@ button[id="left"] {
     border: 1px solid black;
 }
 
+.currentProject img {
+    width: 100%;
+}
+
 #socials {
     display: flex;
     flex-direction: row;
@@ -207,6 +211,14 @@ button[id="left"] {
 
     #jessica {
         object-fit: contain;
+    }
+
+    #project-wrapper {
+        flex-direction: column;
+    }
+
+    .currentProject {
+        width: 90%;
     }
 
     .wrapper {
