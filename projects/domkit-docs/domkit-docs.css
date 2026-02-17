@@ -7,10 +7,19 @@ body {
     text-align: center;
 }
 
+#filenames {
+    text-align: center;
+}
+
 .h1 {
     text-align: center;
     color: white;
     font-size: 3em;
+}
+
+#git-repo {
+    padding: 10px 3rem;
+    font-size: 1em;
 }
 
 a {

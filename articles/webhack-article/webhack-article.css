@@ -52,8 +52,7 @@ p {
 }
 
 a {
-    text-decoration: none;
-    color: black;
+    color: rgb(233, 233, 233);
 }
 
 .hidden {
@@ -66,7 +65,7 @@ a {
 }
 
 .screenshots {
-    width: 100%;
+    width: 80%;
 }
 
 @media screen and (max-width: 800px) {

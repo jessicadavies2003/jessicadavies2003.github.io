@@ -56,6 +56,31 @@ With love, Jessica<br><br>
 <img src="promo-material/Cover-Art-Colin-Oslyn.png" width="40%">`
             }
         }
+    },
+    'who-killed-him': {
+        title: "Who Killed Him? The Murder Mystery Puzzle Book",
+        img: "promo-material/placeholder-cover-art.png",
+        summary: `From the mind of Jessica Davies, comes the cruel and shocking case of the man "Tomas", who was found dead at his computer desk in their large home, after inviting 10 of his friends to dinner at his large home.<br><br>
+Work your way through the various puzzles, including nonograms, codes and sudokus, to find out once and for all... Who killed him!
+        `,
+        genre: "Murder Mystery",
+        bg: "linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(117, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%)",
+        teasers: {
+            // recent updates go first, earlier ones go last
+//             teaser1: {
+//                 teaserTitle: "Book Milestone #1 - 30k Words!",
+//                 teaserDate: "30th November 2025",
+//                 teaserText: `I just hit over 30,000 words on my Colin Oslyn: A Shocking Case book, so I wanted to write a little post here about it!<br><br>
+// Current number of chapters: 13<br><br>
+// Prologue, Chapters 1-7 & Chapter 9 are almost fully written. (with the prologue being the closest to being finished)<br><br>
+// Chapter 8 has just begun work.<br><br>
+// The last 3 chapters are in their draft state.<br><br>
+// The beginning and ending have already been written, a bit of the middle bit is also done, but now needs to be connected to the ending.<br><br>
+// Thank you to everyone who has followed along with this journey so far! I'm excited to share more news about it in the near future.<br><br>
+// With love, Jessica<br><br>
+// <img class="imgs" src="promo-material/colin-oslyn-manuscript-cover-30k.png" alt="Manuscript cover for Colin Oslyn: A Shocking case, with the handwritten text '30k words! (so far)'." width="30%">`
+//             }
+        }
     }
 }
 

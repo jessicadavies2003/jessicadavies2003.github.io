@@ -122,6 +122,7 @@ button[id="left"] {
     display: flex;
     flex-direction: row;
     padding: 30px;
+    width: 100%;
 }
 
 .currentProject {

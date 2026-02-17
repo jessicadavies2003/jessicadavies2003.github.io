@@ -14,6 +14,7 @@
 			<a id="homepage" href="../../media/Jessica-Davies-CV.pdf">CV</a>
 			<a id="myworks" href="../">Projects</a>
 			<a id="mydesigns" href="../../web-designs/">Website Designs</a>
+			<a id="logos" href="../../logo-designs/">Logos</a>
 			<a id="creativeWorks" href="../">Creative Works</a>
 		</div>
 
@@ -28,14 +29,24 @@
             <div class="writing-project" id="colin-oslyn">
                 <img class="coverImg" src="promo-material/Cover-Art-Colin-Oslyn.png">
                 <h2>Colin Oslyn: A Shocking Case</h2>
+				<p>Status: WORK IN PROGRESS - Priority</p>
+            </div>
+			<div class="writing-project" id="who-killed-him">
+                <img class="coverImg" src="promo-material/placeholder-cover-art.png">
+                <h2>Who Killed Him? The Murder Mystery Puzzle Book</h2>
 				<p>Status: WORK IN PROGRESS</p>
             </div>
         </div>
 
 		<script>
 			let colinOslyn = document.getElementById('colin-oslyn');
+			let puzzleMystery = document.getElementById('who-killed-him');
+
 			colinOslyn.addEventListener("click", () => {
 				window.location.href = `story-promo.html?id=${colinOslyn.id}`;
+			});
+			puzzleMystery.addEventListener("click", () => {
+				window.location.href = `story-promo.html?id=${puzzleMystery.id}`;
 			});
 		</script>
 	</body>

@@ -13,10 +13,6 @@ p {
     color: azure;
 }
 
-#somelink {
-    color: #f2f2f2;
-}
-
 .nav_list {
     overflow: hidden;
     padding-left: 3%;
@@ -66,8 +62,8 @@ p {
     color: white;
 }
 
-.design img, .design video {
-    width: 40vw;
+.design img {
+    width: 30vw;
     object-fit: scale-down;
     border-radius: 20px;
     padding: 20px;
