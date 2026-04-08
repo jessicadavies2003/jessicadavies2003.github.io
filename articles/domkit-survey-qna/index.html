@@ -27,6 +27,9 @@
 
 		<div class="wrapper">
 			<div class="desc">
+				<button id="survey-link">Survey Link</button>
+			</div>
+			<div class="desc">
 				<h2>Introduction</h2>
 				<p>DOMKit is an open-source, client-side, JS library used to simplify the creation of HTML elements and CSS styling options. It's still work-in-progress, but still provides multiple web design functions to make ui design easier.</p>
                 <p>I'm quite far into development with this new library, but I need some testers to provide feedback for DOMKit, to fully prepare it for launch.</p>
@@ -54,7 +57,7 @@
 			</div>
 			<div class="desc">
 				<h2>How Long Will the Survey be Open?</h2>
-                <p>Between the 5th of March 2026 and the 5th of May 2026 (a full 2 months)</p>
+                <p>Until the 5th of May 2026.</p>
 			</div>
 			<div class="desc">
 				<h2>Are Answers Anonymous?</h2>
@@ -93,5 +96,11 @@
 				<p>Thank you very much for reading, and I hope to see you at the survey!</p>
 			</div>
 		</div>
+
+		<script>
+			document.getElementById("survey-link").addEventListener("click", () => {
+				window.location.href = "https://forms.cloud.microsoft/r/HPTnCXsfuq";
+			})
+		</script>
 	</body>
 </html>

@@ -63,7 +63,7 @@ With love, Jessica<br><br>
         summary: `From the mind of Jessica Davies, comes the cruel and shocking case of the man "Tomas", who was found dead at his computer desk in their large home, after inviting 10 of his friends to dinner at his large home.<br><br>
 Work your way through the various puzzles, including nonograms, codes and sudokus, to find out once and for all... Who killed him!
         `,
-        genre: "Murder Mystery",
+        genre: "Puzzle | Murder Mystery",
         bg: "linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(117, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%)",
         teasers: {
             // recent updates go first, earlier ones go last
