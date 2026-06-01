@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet"/>
+		<link rel="stylesheet" href="../../navbar-style.css">
+		<link rel="stylesheet" href="projectbot-article.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ProjectBot - Brainstorm Coding Projects with Ease - Jessica Davies</title>
+	</head>
+
+	<body class="body">
+        <div class="nav_list">
+			<a id="homepage" href="../../">Home</a>
+			<a id="homepage" href="../../media/Jessica-Davies-CV.pdf">CV</a>
+			<a id="projects" href="../../projects/">Projects</a>
+			<a id="webDesigns" href="../../web-designs/">Website Designs</a>
+			<a id="logos" href="../../logo-designs/">Logos</a>
+			<a id="creativeWorks" href="../../creative-works/">Creative Works</a>
+		</div>
+
+		<h1 class="h1">ProjectBot - Brainstorm Coding Projects with Ease</h1>
+		<h3 style="color: white;">In this article, we talk about the project 'ProjectBot', why I created it and a few screenshots of the application working.</h3>
+		<h3 style="color: white;">Article Published - 1st June 2026</h3>
+		<h3 style="color: white;">Last Edited - [N/A]</h3>
+		<hr style="color: white;">
+
+		<div class="wrapper">
+			<div class="desc hidden">
+				<h2>Introduction - What is ProjectBot?</h2>
+				<p>ProjectBot is both a Python and web-based (non-AI) chatbot application for developers to brainstorm interesting coding projects based on a variety of inputs, such as topics and programming languages.</p>
+				<p>Below is a screenshot of the homepage's web interface.</p>
+				<img src="images/homepage-ui.png" alt="The homepage for ProjectBot's web interface." class="screenshots">
+				<p>And below is a screenshot of ProjectBot's Python interface in the Command Prompt.</p>
+				<img src="images/projectbot-py-ui.png" alt="ProjectBot's Python interface in the Command Prompt" class="screenshots">
+				<p>ProjectBot works by asking you a series of questions about your interests for your ideal coding project. Writing this article, the app asks you the following questions (directly quoted from ProjectBot's code).</p>
+				<div class="lst">
+					<p>"Let's begin. What sort of programming languages would you like to build with?"</p>
+					<p>"Next up; topics! What sort of topics would you like to work on during your project?"</p>
+					<p>"And finally; difficulty! How difficult do you want your project to be?"</p>
+				</div>
+			</div>
+			<div class="desc hidden">
+				<h2>Why Did I Create ProjectBot?</h2>
+				<p>One issue I find as a developer is being unable to think of new and interesting projects so that I can put my skills to a practical use that solves a problem.</p>
+				<p>ProjectBot solves this issue by giving a user the opportunities to answer a handful of questions about their interests, and uses keywords from user input to match projects from the database to the user's keywords.</p>
+			</div>
+			<div class="desc hidden">
+				<h2>A History</h2>
+				<p>The directory for ProjectBot was first created on the 2nd of May 2026 as a Python application. Originally, it was titled "Coding Project Generator" as the name ProjectBot didn't come to mind at that point in time. Additionally, the idea of converting it to a JavaScript-based web application for users strucked my mind, so I created the directory for this, but didn't touch it until after the Python app was complete 1 week later.</p>
+				<p>The key difference between the Python and web app is that the Python app allowed a user to choose one of the projects that the bot selected, and to create starter files for your chosen project idea in your chosen languages.</p>
+				<p>At the current time of writing this article, the Python application does not support chat logging as it's only in the planning stages.</p>
+			</div>
+			<div class="desc">
+				<h2>Features</h2>
+				<p>ProjectBot has a range of features, including...</p>
+				<div class="lst">
+					<p><b>Simple Interface</b> - The interface is made to be as simple as possible for the user, to ensure the focus remains on the chat content itself.</p>
+					<p><b>Saved Chat Logs</b> - Chats can be saved to the user's local storage and can be viewed whenever the user wishes, ensuring privacy but keeping a way to save their chats.</p>
+					<p><b>Natural Language Processing (NLP)</b> - The bot uses Natural Language Processing for much more accurate results</p>
+				</div>
+            </div>
+			<div class="desc hidden">
+				<h2>Conclusion</h2>
+				<p>If you have any feedback for me (which I would <b>love</b> to hear!), all of my contact details can be found on the <a href="../../index.html">homepage</a>.</p>
+				<p>Thank you very much for reading this article, and I hope you enjoyed reading about ProjectBot, and potentially use the application yourself once it releases.</p>
+				<p>Until next time!</p>
+			</div>
+		</div>
+
+		<script>
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add("show");
+					} else {
+						entry.target.classList.remove("show");
+					}
+				})
+			})
+
+			const hiddenElements = document.querySelectorAll(".hidden");
+			hiddenElements.forEach((el) => observer.observe(el));
+		</script>
+	</body>
+</html>
