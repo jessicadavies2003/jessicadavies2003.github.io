@@ -13,26 +13,49 @@ What will they uncover? Who is the true murderer of this case? And why is this c
         teasers: {
             // recent updates go first, earlier ones go last
             teaser1: {
-                teaserTitle: "The Painter and The Scientist! - Promotional Sketches #3",
-                teaserDate: "7th August 2026",
-                teaserText: `A little sketch of the abstract painter Colin Oslyn, and our beloved scientist, Jacob Smith.<br><br>
-<img class='imgs' src='promo-material/colin-n-jacob-sketches.jpg' alt='Sketches of the cast' width='100%'>
+                teaserTitle: "Potential Book Cover Design",
+                teaserDate: "18th November 2026",
+                teaserText: `I wanted to redesign the cover art for my book, and now I can't decide between the current one, and this one!<br><br>
+Want to vote? Head over to my Ko-Fi and find my recent post on it!<br><br>
+<img class='imgs' src='promo-material/potential-book-cover-colin-oslyn.png' width='40%'>
+<img class='imgs' src='promo-material/Cover-Art-Colin-Oslyn.png' width='40%'>
 `
             },
             teaser2: {
-                teaserTitle: "Sketches of the Cast - Promotional Sketches #2",
-                teaserDate: "4th August 2026",
-                teaserText: `A handful of the cast from The Curious Case of Colin Oslyn. Including Detective Brighton, Colin Oslyn, and others!<br><br>
-<img class='imgs' src='promo-material/sketches-4-august/Colin-Oslyn.png' alt='Sketches of the cast' width='65%'>
-<img class='imgs' src='promo-material/sketches-4-august/Detective-Brighton.png' alt='Sketches of the cast' width='65%'>
-<img class='imgs' src='promo-material/sketches-4-august/Jacob-Smith.png' alt='Sketches of the cast' width='65%'>
-<img class='imgs' src='promo-material/sketches-4-august/Jamie-Donaldson.png' alt='Sketches of the cast' width='65%'>
-<img class='imgs' src='promo-material/sketches-4-august/Milton-Lee.png' alt='Sketches of the cast' width='65%'>
-<img class='imgs' src='promo-material/sketches-4-august/Stephanie-Laurens.png' alt='Sketches of the cast' width='65%'>
-<img class='imgs' src='promo-material/sketches-4-august/Steven-Oslyn.png' alt='Sketches of the cast' width='65%'>
+                teaserTitle: "Poster Designs #1",
+                teaserDate: "21st September 2026",
+                teaserText: `A fully detailed poster design for The Curious Case of Colin Oslyn!<br><br>
+<img class='imgs' src='promo-material/colin-oslyn-poster-design.png' width='50%'>
 `
             },
             teaser3: {
+                teaserTitle: "WORK IN PROGRESS - Poster Designs #1",
+                teaserDate: "1st September 2026",
+                teaserText: `A teaser for a poster design for The Curious Case of Colin Oslyn!<br><br>
+<img class='imgs' src='promo-material/colin-oslyn-promo-poster-sketch.jpg' alt='Sketches of the cast' width='50%'>
+`
+            },
+            teaser4: {
+                teaserTitle: "The Painter and The Scientist! - Promotional Sketches #3",
+                teaserDate: "7th August 2026",
+                teaserText: `A little sketch of the abstract painter Colin Oslyn, and our beloved scientist, Jacob Smith.<br><br>
+<img class='imgs' src='promo-material/colin-n-jacob-sketches.jpg' alt='Sketches of the cast' width='50%'>
+`
+            },
+            teaser5: {
+                teaserTitle: "Sketches of the Cast - Promotional Sketches #2",
+                teaserDate: "4th August 2026",
+                teaserText: `A handful of the cast from The Curious Case of Colin Oslyn. Including Detective Brighton, Colin Oslyn, and others!<br><br>
+<img class='imgs' src='promo-material/sketches-4-august/Colin-Oslyn.png' alt='Sketches of the cast' width=50%'>
+<img class='imgs' src='promo-material/sketches-4-august/Detective-Brighton.png' alt='Sketches of the cast' width='50%'>
+<img class='imgs' src='promo-material/sketches-4-august/Jacob-Smith.png' alt='Sketches of the cast' width='50%'>
+<img class='imgs' src='promo-material/sketches-4-august/Jamie-Donaldson.png' alt='Sketches of the cast' width='50%'>
+<img class='imgs' src='promo-material/sketches-4-august/Milton-Lee.png' alt='Sketches of the cast' width='50%'>
+<img class='imgs' src='promo-material/sketches-4-august/Stephanie-Laurens.png' alt='Sketches of the cast' width='50%'>
+<img class='imgs' src='promo-material/sketches-4-august/Steven-Oslyn.png' alt='Sketches of the cast' width='50%'>
+`
+            },
+            teaser6: {
                 teaserTitle: "Book Milestone #1 - 30k Words!",
                 teaserDate: "30th November 2025",
                 teaserText: `I just hit over 30,000 words on my The Curious Case of Colin Oslyn book, so I wanted to write a little post here about it!<br><br>
@@ -45,32 +68,32 @@ Thank you to everyone who has followed along with this journey so far! I'm excit
 With love, Jessica<br><br>
 <img class="imgs" src="promo-material/colin-oslyn-manuscript-cover-30k.png" alt="Manuscript cover for The Curious Case of Colin Oslyn, with the handwritten text '30k words! (so far)'." width="50%">`
             },
-            teaser4: {
+            teaser7: {
                 teaserTitle: "Teaser #1 - Prologue",
                 teaserDate: "28th October 2025",
                 teaserText: `The very first page of the entire manuscript. Keep in mind that this can (and will most likely) change.<br><br>
-<img class="imgs" src="promo-material/first-page-manuscript.png" alt="The very first page of the entire manuscript" width="60%">
+<img class="imgs" src="promo-material/first-page-manuscript.png" alt="The very first page of the entire manuscript" width="50%">
 `
             },
-            teaser5: {
+            teaser8: {
                 teaserTitle: "[WORK IN PROGRESS] Sketches of the Cast!  - Promotional Sketches #1",
                 teaserDate: "28th October 2025",
                 teaserText: `A handful of the cast from The Curious Case of Colin Oslyn. Including Detective Brighton, Colin Oslyn, and others!<br><br>
-<img class="imgs" src="promo-material/wip-character-sketches-colin-oslyn.jpg" alt="Sketches of the cast" width="60%">`
+<img class="imgs" src="promo-material/wip-character-sketches-colin-oslyn.jpg" alt="Sketches of the cast" width="50%">`
             },
-            teaser6: {
+            teaser9: {
                 teaserTitle: "Promotional Illustration #2",
                 teaserDate: "26th July 2025",
                 teaserText: `An illustration from chapter 1 of The Curious Case of Colin Oslyn. A mobile phone call from Jamie Donaldson to Detective Brighton.<br><br>
-<img class="imgs" src="promo-material/colin-oslyn-illustration-2.png" alt="a mobile phone call from Jamie Donaldson to Detective Brighton" width="60%">`
+<img class="imgs" src="promo-material/colin-oslyn-illustration-2.png" alt="a mobile phone call from Jamie Donaldson to Detective Brighton" width="50%">`
             },
-            teaser7: {
+            teaser10: {
                 teaserTitle: "Promotional Illustration #1",
                 teaserDate: "2nd June 2025",
                 teaserText: `An illustration from chapter 2 of The Curious Case of Colin Oslyn. Investigation time with Detective Brighton and Jacob Smith.<br><br>
-<img class="imgs" src="promo-material/colin-oslyn-illustration-1.png" alt="investigation time with Detective Brighton and Jacob Smith" width="60%">`
+<img class="imgs" src="promo-material/colin-oslyn-illustration-1.png" alt="investigation time with Detective Brighton and Jacob Smith" width="50%">`
             },
-            teaser8: {
+            teaser11: {
                 teaserTitle: "New Cover Image",
                 teaserDate: "17th May 2025",
                 teaserText: `All credit for this image (apart from the pic of me) goes to my friend Callum Stook. Thank you mate!<br><br>
