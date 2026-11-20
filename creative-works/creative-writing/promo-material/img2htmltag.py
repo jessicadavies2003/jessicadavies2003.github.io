@@ -15,7 +15,7 @@ def dir2tags(filepath: str, width: str = "30%"):
 
 current_dir = path.dirname(path.abspath(argv[0])).replace("\\", "/")
 
-filename = "colin-n-jacob-sketches.jpg"
+filename = "colin-oslyn-poster-design.png"
 try:
     print(file2tag(filename))
 except Exception as e:
