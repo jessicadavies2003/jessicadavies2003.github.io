@@ -50,12 +50,20 @@ ul li {
     text-align: left;
 }
 
-@media screen and (max-width: 768px) {
+img {
+    width: 40%;
+}
+
+@media screen and (max-width: 800px) {
     .wrapper {
         width: 90%;
     }
 
     .wrapper p {
         font-size: 15px;
+    }
+
+    img {
+        width: 90%;
     }
 }
